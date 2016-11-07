@@ -1,0 +1,22 @@
+/*
+Theme Name: MAXWELL CARL SCOTT EMPTY THEME / HTML5 BOILERPLATE BASE
+Theme URI: http://maxwellcarlscott.com
+Author: Maxwell Carl Scott
+*/
+ 
+@import "compass";
+@import "compass/reset";
+
+// Here we import our partials
+@import "_partials/mixins";
+@import "_partials/variables";
+@import "_partials/typography";
+@import "_partials/global";
+
+@import "_layouts/header";
+@import "_layouts/page";
+@import "_layouts/footer";
+
+
+
+

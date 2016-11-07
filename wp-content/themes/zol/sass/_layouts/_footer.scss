@@ -1,0 +1,271 @@
+
+
+
+// SUB FOOTER // --------------------------------------------------
+
+
+.insta {
+	@include block;
+	padding: 90px 0;
+	overflow: hidden;
+	background: white;
+	h6 {
+		text-transform: uppercase;
+		letter-spacing: 6px;
+		font-size: 14px;
+		font-weight: 600;
+		margin-bottom: 30px;
+		text-align: center;
+		a:hover { color: $accent1; }
+	} 
+}
+#instafeed {
+	position: relative;
+	text-align: center;
+	width: 110%;
+	left: -5%;
+	-ms-transform: rotate(-1deg); /* IE 9 */
+  -webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
+  transform: rotate(-1deg);
+	a {
+		display: inline-block;
+		width: 15%;
+		margin: 1% .5%;
+		&:hover { opacity: .8; }
+		img { width: 100%; }
+		@include breakpoint(xm) { 
+			width: 30%;
+		}
+	}
+}
+
+
+
+.sub-footer {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background: #222;
+	text-align: center;
+	color: white;
+	.newsletter-bg {
+		min-height: 500px;
+	}
+	.newsletter-txt {
+		min-height: 500px;
+		padding: 60px 60px;
+		text-align: left;
+		h2 {
+			text-transform: uppercase;
+			//font-size: 1.6em;
+			margin-bottom: 15px;
+		}
+	}
+	label {
+		float: left;
+		width: 100%;
+		display: block;
+		margin-bottom: 5px;
+		opacity: .4;
+		letter-spacing: 2px;
+		font-size: 12px;
+		font-weight: 600;
+	}
+	input {
+		color: #222;
+		width: 80%;
+		margin: 5px 0 15px;
+		height: 45px; 
+		line-height: 45px;
+	}
+	select {
+		-webkit-appearance: none;
+		padding: 0 15px;
+		text-align: center;
+		display: inline-block;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 14px;
+		//margin: 5px 0;
+		width: 220px;
+		width: 80%;
+		background: white;
+		border-radius: 0;
+		color: white;
+		height: 45px;
+		line-height: 45px;
+		border: 0;
+		background: #111 url('img/chevdown-white.png') no-repeat right 20px center;
+		background-size: 20px;
+		&:hover { opacity: .9; cursor: pointer; }
+	}
+	input[type="submit"] {
+		text-align: center;
+		display: inline-block;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 14px;
+		border-radius: 0;
+		margin: 30px 0;
+		width: 220px;
+		border: 3px solid white;
+		height: 50px;
+		line-height: 40px;
+		color: white;
+		&:hover {
+			border: 3px solid $accent1;
+			color: $accent1;
+		}
+	}
+}
+
+
+
+// FOOTER // --------------------------------------------------
+
+
+.main-footer {
+	padding: 120px 0;
+	@include block;
+	width: 100%;
+	background: #111;
+	color: #666;
+	text-align: left;
+	color: white;
+	p { font-size: 11px; line-height: 16px; }
+	li a { font-size: 11px; line-height: 16px;color: #666; }
+	a { color: #666; &:hover { color: white; } }
+	h4 { font-family: 'gothammediumregular'; margin-bottom: 10px; color: #ddd; font-size: 14px; text-transform: uppercase; }
+	@include breakpoint(xs) { 
+		h4 { padding-top: 20px; }
+	}
+}	
+
+
+
+
+.copyright {
+	@include block;
+	background: #222;
+	color: #666;
+	padding: 10px 0;
+	font-size: 10px;
+	text-align: center;
+	a { color: #888; }
+}
+
+
+.site-map {
+	text-align: left;
+	li {
+		display: inline-block;
+		width: 49%;
+		line-height: 18px;
+		height: 18px;
+		vertical-align: top;
+		.sub-menu li a {
+			font-size: 10px;
+		}
+		a { display: block; } 
+	}
+	li > ul > li { width: 100%; vertical-align: top; }
+	ul.children { margin-top: 20px;}
+	
+}
+
+.footer-social {
+	font-size: 18px;
+	margin-bottom: 20px;
+	li { display: inline-block; margin-right: 5px; }
+}
+
+
+
+
+
+
+// mailchimp // --------------------------------------------------
+
+
+
+
+.mailchimp {
+	margin-top: 20px;
+	input {
+		color: white;
+    background-color: #222;
+    border: 0;
+	}
+	input[type="submit"] {
+		@include ease(.2s);
+		font-family: 'gothammediumregular';
+		color: white;
+		background: #111;
+		position: relative;
+		top: -15px;
+		&:hover { background: $accent1; }
+	}
+}
+
+
+
+// OVERLAYS AND MODALS // --------------------------------------------------
+
+.age-modal {
+	@include ease(.4s);
+	position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: auto;
+  background: #222;
+  color: white;
+  padding: 40px 60px;
+  z-index: 9999;
+  text-align: center;
+  text-transform: uppercase;
+  p { 
+  	font-size: 11px; opacity: .3; 
+  	text-transform: none;
+  	letter-spacing: 1px;
+  }
+  visibility: hidden;
+	opacity: 0;
+	margin-top: 60px;
+  &.active {
+  	@include blur-in;
+  	visibility: visible;
+  	opacity: 1;
+  	margin-top: -30px;
+  }
+}
+.age-modal-overlay {
+	@include ease(.4s);
+	position: fixed;
+	width: 100%; height: 100%;
+	background: rgba(black,.8);
+	left: 0; right: 0; bottom: 0; top: 0;
+	z-index: 9991;
+	visibility: hidden;
+	opacity: 0;
+	&.active {
+  	@include blur-in;
+  	visibility: visible;
+  	opacity: 1;
+  }
+}
+
+
+.age-btn {
+	border: 3px solid white;
+	color: white;
+	&:hover {
+		border: 3px solid $accent1;
+		color: $accent1;
+	}
+}
+
+
+
+

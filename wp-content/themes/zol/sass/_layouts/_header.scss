@@ -1,0 +1,451 @@
+
+
+
+// HEADER // --------------------------------------------------
+
+.main-header {
+	@include ease(.6s);
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	z-index: 999;
+	top: 0;
+	text-align: center;
+}
+body.scrolled .main-header {
+	background: #000;
+}
+
+
+
+
+.logo {
+	display: block;
+	line-height: 80px;
+  width: 160px;
+  color: #222;
+	position: absolute;
+	left: 50%;
+	margin-left: -80px;
+	img { width: 100%; }
+	@include breakpoint(xs) {
+		position: relative;
+  }
+}
+
+
+.social-header {
+	@include ease(2s);
+	position: absolute;
+	padding: 30px;
+	right: -2000px;
+	.insta-logo {
+		margin-top: 3px;
+	}
+	a {
+		display: block;
+		color: white;
+		text-align: right;
+		line-height: 14px;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 400;
+		letter-spacing: 2px;
+		opacity: 1;
+		&:hover { color: $accent1; }
+	}
+}
+body.ready .social-header {
+	right: 0;
+}
+
+
+.primary-nav {
+	text-align: center;
+
+	@include breakpoint(xs) {
+		display: none;
+		padding-right: 0;
+	}
+	.nav-wrap {
+		text-align: center;
+	}
+	ul {
+		text-align: center;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	ul > li {
+		position: relative;
+		display: block;
+		vertical-align: top;
+		margin: 0 2px;
+		line-height: 60px;
+		height: 60px;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		@include breakpoint(md) {
+			margin: 0 10px;
+		}
+		&.current-menu-item a {
+			color: $accent1;
+		}
+		ul.sub-menu {
+			@include ease(.4s);
+			position: absolute;
+			width: 280px;
+			background: white;
+			left: -20px;
+			margin-top: -1px;
+			max-height: 0;
+			overflow: hidden;
+			z-index: 9;
+			li { 
+				display: block;
+				text-align: left; 
+				line-height: 40px;
+				height: 40px;
+				width: 100%;
+				margin: 0;
+				padding: 0 20px;
+				border-top: 1px solid rgba(#222, .1);
+				a {
+					color: #222;
+					text-align: left;
+				}
+				&:hover {
+					a { color: $accent1; }
+				}
+			}
+		}
+		&:hover {
+			a { color: $accent1; }
+		}
+		&:hover ul.sub-menu {
+			max-height: 400px;
+		}
+		a {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 400;
+			letter-spacing: 1px;
+			display: block;
+			width: 100%; height: 100%;
+			font-size: 10px;
+			text-transform: uppercase;
+			font-weight: 500;
+			color: white;
+			@include breakpoint(md) {
+				font-size: 11px;
+			}
+			@include breakpoint(lg) {
+				font-size: 12px;
+			}
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+// Navigation// --------------------------------------------------
+
+.menu-pullout-btn {
+	@include ease(2s);
+	display: block;
+	z-index: 999;
+	position: absolute;
+	top: 4px;
+	left: -2000px;
+	padding: 28px 30px;
+	@include breakpoint(xm) {
+		padding: 20px 15px;
+	}
+	&:hover { cursor:pointer;}
+	&:hover .navigate-txt { opacity: 1; }
+	&:hover .btn-bar { width: 45px; }
+}
+body.ready .menu-pullout-btn {
+	left: 0;
+}
+.btn-bar {
+	@include ease(.2s);
+	position: relative;
+	width: 35px;
+	border: 1px solid white;
+	margin-bottom: 8px;
+	@include breakpoint(xm) {
+		width: 25px;
+		margin-bottom: 6px;
+	}
+}
+.navigate-txt {
+	font-family: monospace; color: white; 
+	margin-top: -20px; font-size: 10px; padding-bottom: 10px; opacity: .6;
+	&:hover { opacity: 1; }
+}
+
+
+.menu-pullout {
+	@include ease(.4s);
+	display: block;
+	width: 400px;
+	left: -400px;
+	position: fixed;
+	height: 100%;
+	background: #111;
+	z-index: 99999;
+	padding: 60px 0;
+	@include breakpoint(xm) {
+		width: 100vw;
+		left: -100vw;
+	}
+}
+body.menu-pullout-active .menu-pullout {
+	left: 0;
+}
+
+.menu-pullout-overlay {
+	@include ease(.6s);
+	position: fixed;
+	width: 100%; height: 100%;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: rgba(0,0,0,.8);
+	z-index: 99;
+	visibility: hidden;
+	opacity: 0;
+	&:hover { cursor: pointer; }
+}
+body.menu-pullout-active .menu-pullout-overlay {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.menu-close-btn {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 25px;
+	padding: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 9999;
+} 
+.menu-close-btn:before, .menu-close-btn:after {
+  content:'';
+  position:absolute;
+  width:36px;
+  height:1px;
+  background-color: white;
+  top:16px;
+}
+
+.menu-close-btn:before {
+	@include ease(.8s);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    transform:rotate(180deg);
+    //left:2px;
+}
+.menu-close-btn:after {
+	@include ease(.8s);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    transform:rotate(180deg);
+    //right:2px;
+}
+
+body.menu-pullout-active .menu-close-btn:before {
+	-webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+body.menu-pullout-active .menu-close-btn:after  {
+	-webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+// BANNER // --------------------------------------------------
+
+
+
+
+.banner {
+	display: block;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+	img { width: 100%; }
+}
+.page .banner, .search .banner {
+	height: 300px;
+}
+.contact .banner {
+	height: 500px;
+}
+.search .banner {
+	//background: url(img/defaultbanner.jpg);
+}
+.banner.blog {
+	height: 200px;
+
+}
+
+
+
+
+.homepage-slider {
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+	background: #111;
+	//margin-top: 100px;
+	@include breakpoint(xs) {
+		//margin-top: 160px;
+	}
+	.item {
+		height: 100vh;
+		@include breakpoint(xs) {
+			height: 300px;
+		}
+		// overlay
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%; height: 100%;
+			top: 0; left: 0;
+			background:rgba(black, .6); 
+			z-index: 9999;
+		}
+		.callout-txt {
+			@include ease(1s);
+			h1 {
+				text-align: center;
+				font-size: 4em;
+				line-height: 6em;
+				color: white;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				z-index: 99999;
+			}
+			z-index: 99999;
+			opacity: 0;
+			visibility: hidden;
+			margin-top: 60px;
+			&.visible {
+				opacity: 1;
+				visibility: visible;
+				margin-top: 0;
+			}
+		}
+		.slide-text {
+			background: white;
+			color: black;
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 20%;
+			padding: 15px 30px;
+			font-size: 16px;
+			border-left: 15px solid $accent1;
+			z-index: 99999;
+		}
+	}
+	&:hover {
+		.slider-controls .left { margin-left: 0; }
+		.slider-controls .right { margin-right: 0; }
+	}
+}
+
+
+
+
+
+/* Carousel Fading slide */
+// .carousel-fade .carousel-inner { background: #000; }
+// .carousel-fade .carousel-control { z-index: 2; }  
+// .carousel-fade .item {
+// opacity: 0;
+// -webkit-transition-property: opacity;
+// -moz-transition-property: opacity;
+// -o-transition-property: opacity;
+// transition-property: opacity;
+// }
+
+// .carousel-fade .next.left,
+// .carousel-fade .prev.right,
+// .carousel-fade .item.active { opacity: 1; }
+
+// .carousel-fade .active.left,
+// .carousel-fade .active.right {
+// left: 0;
+// opacity: 0;
+// z-index: 1;
+// }
+
+
+/* Safari Fix */
+// @media all and (transform-3d), (-webkit-transform-3d) {
+//     .carousel-fade .carousel-inner > .item.next,
+//     .carousel-fade .carousel-inner > .item.active.right {
+//       opacity: 0;
+//       -webkit-transform: translate3d(0, 0, 0);
+//               transform: translate3d(0, 0, 0);
+//     }
+//     .carousel-fade .carousel-inner > .item.prev,
+//     .carousel-fade .carousel-inner > .item.active.left {
+//       opacity: 0;
+//       -webkit-transform: translate3d(0, 0, 0);
+//               transform: translate3d(0, 0, 0);
+//     }
+//     .carousel-fade .carousel-inner > .item.next.left,
+//     .carousel-fade .carousel-inner > .item.prev.right,
+//     .carousel-fade .carousel-inner > .item.active {
+//       opacity: 1;
+//       -webkit-transform: translate3d(0, 0, 0);
+//               transform: translate3d(0, 0, 0);
+//     }
+// }
+
+
+.slider-controls {
+	position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 0;
+  margin-top: -45px;
+  .left { margin-left: -100px; @include ease(.2s); }
+  .right { margin-right: -100px; @include ease(.2s); }
+  a { padding: 0 15px;}
+}
+
+
+
+
+
+
+
+
+

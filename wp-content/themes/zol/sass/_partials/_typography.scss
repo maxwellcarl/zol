@@ -1,0 +1,132 @@
+// fonts
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+@font-face {
+    font-family: 'gothamboldregular';
+    src: url('fonts/gothambold-webfont.eot');
+    src: url('fonts/gothambold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothambold-webfont.woff2') format('woff2'),
+         url('fonts/gothambold-webfont.woff') format('woff'),
+         url('fonts/gothambold-webfont.ttf') format('truetype'),
+         url('fonts/gothambold-webfont.svg#gothamboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'gothambookregular';
+    src: url('fonts/gothambook-webfont.eot');
+    src: url('fonts/gothambook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothambook-webfont.woff2') format('woff2'),
+         url('fonts/gothambook-webfont.woff') format('woff'),
+         url('fonts/gothambook-webfont.ttf') format('truetype'),
+         url('fonts/gothambook-webfont.svg#gothambookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamlightregular';
+    src: url('fonts/gothamlight-webfont.eot');
+    src: url('fonts/gothamlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothamlight-webfont.woff2') format('woff2'),
+         url('fonts/gothamlight-webfont.woff') format('woff'),
+         url('fonts/gothamlight-webfont.ttf') format('truetype'),
+         url('fonts/gothamlight-webfont.svg#gothamlightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothammediumregular';
+    src: url('fonts/gothammedium-webfont.eot');
+    src: url('fonts/gothammedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothammedium-webfont.woff2') format('woff2'),
+         url('fonts/gothammedium-webfont.woff') format('woff'),
+         url('fonts/gothammedium-webfont.ttf') format('truetype'),
+         url('fonts/gothammedium-webfont.svg#gothammediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Futura Std';
+    src: url('fonts/FuturaStd-Heavy.eot');
+    src: url('fonts/FuturaStd-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FuturaStd-Heavy.woff') format('woff'),
+        url('fonts/FuturaStd-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    src: url('fonts/FuturaStd-BoldOblique.eot');
+    src: url('fonts/FuturaStd-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FuturaStd-BoldOblique.woff') format('woff'),
+        url('fonts/FuturaStd-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    src: url('fonts/FuturaStd-ExtraBold.eot');
+    src: url('fonts/FuturaStd-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FuturaStd-ExtraBold.woff') format('woff'),
+        url('fonts/FuturaStd-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    src: url('fonts/FuturaStd-Book.eot');
+    src: url('fonts/FuturaStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FuturaStd-Book.woff') format('woff'),
+        url('fonts/FuturaStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    src: url('fonts/FuturaStd-Bold.eot');
+    src: url('fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FuturaStd-Bold.woff') format('woff'),
+        url('fonts/FuturaStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Std';
+    src: url('fonts/FuturaStd-Light.eot');
+    src: url('fonts/uturaStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FuturaStd-Light.woff') format('woff'),
+        url('fonts/FuturaStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'FuturaStd-book';
+    src: url('fonts/FuturaStd-Book.eot');
+    src: url('fonts/FuturaStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('fonts/FuturaStd-Book.woff') format('woff'),
+        url('fonts/FuturaStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

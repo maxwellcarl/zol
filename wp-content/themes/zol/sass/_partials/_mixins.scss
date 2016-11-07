@@ -1,0 +1,103 @@
+
+// Media Query // --------------------------------------------------
+
+@mixin breakpoint($class) {
+
+  // MAX WIDTHS 
+  @if $class == xs {
+    @media (max-width: 767px) { @content; }
+  }
+  @else if $class == xm {
+    @media (max-width: 992px) { @content; }
+  }
+
+  // MIN WIDTHS
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+ 
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: xs, xm, sm, md, lg";
+  }
+}
+
+
+// mixin for horizontal and vertical centering
+@mixin center($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+} 
+// markup: @include center(true, false);   ---> ( x, y )
+
+
+@mixin block {
+	position: relative;
+	display: block;
+}
+
+@mixin ease($val) {
+	-webkit-transition: all $val ease-in-out;
+  -moz-transition: all $val ease-in-out;
+  -o-transition: all $val ease-in-out;
+  transition: all $val ease-in-out;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin rotate($val)  {
+  -webkit-transform: rotate($val); 
+  -moz-transform: rotate($val);  
+}
+
+@mixin preserve3d {
+	-webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+// unknown height vertical align
+@mixin vertical-align {
+  top: 50%;
+  transform: translateY(-50%);
+} 
+
+// vertical align flexbox
+@mixin flexbox-vert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@mixin blur {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+@mixin blur-in {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+
+

@@ -4,7 +4,7 @@ Theme URI: http://maxwellcarlscott.com
 Author: Maxwell Carl Scott
 */
 @import url(http://weloveiconfonts.com/api/?family=entypo);
-/* line 17, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,46 +26,46 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -82,7 +82,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'gothambookregular';
   src: url("fonts/gothambook-webfont.eot");
@@ -90,7 +89,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'gothamlightregular';
   src: url("fonts/gothamlight-webfont.eot");
@@ -98,7 +96,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'gothammediumregular';
   src: url("fonts/gothammedium-webfont.eot");
@@ -106,7 +103,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Futura Std';
   src: url("fonts/FuturaStd-Heavy.eot");
@@ -114,7 +110,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: 900;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Futura Std';
   src: url("fonts/FuturaStd-BoldOblique.eot");
@@ -122,7 +117,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
   font-family: 'Futura Std';
   src: url("fonts/FuturaStd-ExtraBold.eot");
@@ -130,7 +124,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: 800;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Futura Std';
   src: url("fonts/FuturaStd-Book.eot");
@@ -138,7 +131,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Futura Std';
   src: url("fonts/FuturaStd-Bold.eot");
@@ -146,7 +138,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Futura Std';
   src: url("fonts/FuturaStd-Light.eot");
@@ -154,7 +145,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'FuturaStd-book';
   src: url("fonts/FuturaStd-Book.eot");
@@ -162,12 +152,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: normal;
   font-style: normal;
 }
-
 /*------------------------------------*\
     MAIN
 \*------------------------------------*/
 /* global box-sizing */
-/* line 9, sass/_partials/_global.scss */
+/* line 7, sass/_partials/_global.scss */
 *,
 *:after,
 *:before {
@@ -202,7 +191,7 @@ body.no-scroll {
 }
 
 /* clear */
-/* line 36, sass/_partials/_global.scss */
+/* line 35, sass/_partials/_global.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -254,7 +243,7 @@ a:focus {
   text-decoration: none;
 }
 
-/* line 75, sass/_partials/_global.scss */
+/* line 74, sass/_partials/_global.scss */
 a:hover,
 a:active {
   outline: 0;
@@ -574,56 +563,38 @@ input[type="submit"] {
 }
 
 @-webkit-keyframes bganimate {
-  /* line 325, sass/_partials/_global.scss */
   0% {
     background-position: 0% 50%;
   }
-
-  /* line 326, sass/_partials/_global.scss */
   50% {
     background-position: 100% 50%;
   }
-
-  /* line 327, sass/_partials/_global.scss */
   100% {
     background-position: 0% 50%;
   }
 }
-
 @-moz-keyframes bganimate {
-  /* line 330, sass/_partials/_global.scss */
   0% {
     background-position: 0% 50%;
   }
-
-  /* line 331, sass/_partials/_global.scss */
   50% {
     background-position: 100% 50%;
   }
-
-  /* line 332, sass/_partials/_global.scss */
   100% {
     background-position: 0% 50%;
   }
 }
-
 @keyframes bganimate {
-  /* line 335, sass/_partials/_global.scss */
   0% {
     background-position: 0% 50%;
   }
-
-  /* line 336, sass/_partials/_global.scss */
   50% {
     background-position: 100% 50%;
   }
-
-  /* line 337, sass/_partials/_global.scss */
   100% {
     background-position: 0% 50%;
   }
 }
-
 /* line 346, sass/_partials/_global.scss */
 #mouse-icon {
   -webkit-transition: all 1s ease-in-out;
@@ -720,47 +691,35 @@ body.scrolled #mouse-icon {
 }
 
 @-webkit-keyframes scrollWheel {
-  /* line 427, sass/_partials/_global.scss */
   0% {
     top: 5px;
     opacity: 1;
   }
-
-  /* line 428, sass/_partials/_global.scss */
   100% {
     top: 20px;
     opacity: 0;
   }
 }
-
 @-moz-keyframes scrollWheel {
-  /* line 432, sass/_partials/_global.scss */
   0% {
     top: 5px;
     opacity: 1;
   }
-
-  /* line 433, sass/_partials/_global.scss */
   100% {
     top: 20px;
     opacity: 0;
   }
 }
-
 @-o-keyframes scrollWheel {
-  /* line 437, sass/_partials/_global.scss */
   0% {
     top: 5px;
     opacity: 1;
   }
-
-  /* line 438, sass/_partials/_global.scss */
   100% {
     top: 20px;
     opacity: 0;
   }
 }
-
 /*------------------------------------*\
     MISC
 \*------------------------------------*/
@@ -793,7 +752,7 @@ body.scrolled #mouse-icon {
   margin: 5px 20px 20px 0;
 }
 
-/* line 473, sass/_partials/_global.scss */
+/* line 472, sass/_partials/_global.scss */
 .aligncenter,
 div.aligncenter {
   display: block;
@@ -870,7 +829,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 526, sass/_partials/_global.scss */
+/* line 525, sass/_partials/_global.scss */
 .wp-caption .wp-caption-text,
 .gallery-caption {
   font-size: 11px;
@@ -891,7 +850,7 @@ a img.aligncenter {
     text-shadow: none !important;
   }
 
-  /* line 551, sass/_partials/_global.scss */
+  /* line 550, sass/_partials/_global.scss */
   a,
   a:visited {
     text-decoration: underline;
@@ -907,7 +866,7 @@ a img.aligncenter {
     content: " (" attr(title) ")";
   }
 
-  /* line 562, sass/_partials/_global.scss */
+  /* line 560, sass/_partials/_global.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
@@ -937,9 +896,8 @@ a img.aligncenter {
 
   @page {
     margin: 0.5cm;
-}
-
-  /* line 583, sass/_partials/_global.scss */
+  }
+  /* line 581, sass/_partials/_global.scss */
   p,
   h2,
   h3 {
@@ -947,7 +905,7 @@ a img.aligncenter {
     widows: 3;
   }
 
-  /* line 588, sass/_partials/_global.scss */
+  /* line 587, sass/_partials/_global.scss */
   h2,
   h3 {
     page-break-after: avoid;
@@ -1644,7 +1602,7 @@ body.menu-pullout-active .menu-close-btn:after {
   height: 45px;
   line-height: 45px;
   border: 0;
-  background: #111111 url("img/chevdown-white.png") no-repeat right 20px center;
+  background: #111 url("img/chevdown-white.png") no-repeat right 20px center;
   background-size: 20px;
 }
 /* line 100, sass/_layouts/_footer.scss */

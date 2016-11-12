@@ -77,7 +77,7 @@ conditionizr.config({
 
 
 <!-- header -->
-<header class="main-header clear" role="banner">
+<header class="main-header clear hidden-xs" role="banner">
 	<div class="container">
 
 
@@ -89,7 +89,10 @@ conditionizr.config({
 		</div>
 
 		<a href="/" class="logo">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/logo2white.png">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo-main-white.png">
+		</a>
+		<a href="/" class="logo-scrolled">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo-white-noTagline.png">
 		</a>
 
 		<div class="social-header">
@@ -111,6 +114,7 @@ conditionizr.config({
 <!-- banner  sections -->
 <? if ( is_page_template( 'template-homepage.php' ) ): ?><!-- homepage -->
 	
+<div class="hidden-xs">
 	<div id="homecaro" class="carousel homepage-slider slide" data-ride="carousel" data-interval="false">
 		<?php $row = 1; if( have_rows('homepage_slider') ): ?>
 		  <!-- Wrapper for slides -->
@@ -153,7 +157,6 @@ conditionizr.config({
 		  <?php $row++; endwhile; ?>
 		  </div>
 		<?php endif; ?>
-
 	  <!-- Controls -->
 	  <div class="slider-controls">
 		  <a class="left pull-left" href="#homecaro" role="button" data-slide="prev">
@@ -170,6 +173,44 @@ conditionizr.config({
 	  </div>
 
 	</div>
+</div>
+
+<div class="visible-xs">
+	<header class="header-mobile">
+
+		<div class="menu-pullout-btn">
+			<!-- <div class="navigate-txt">Navigate.</div> -->
+			<div class="btn-bar"></div>
+			<div class="btn-bar"></div>
+			<div class="btn-bar"></div>
+		</div>
+
+		<div class="social-mobile">
+			<a href="#">
+				<span class='zocial-facebook'></span>
+			</a>
+			<a href="#">
+				<span class='zocial-youtube'></span>
+			</a>
+			<a href="#">
+				<span class='zocial-linkedin'></span>
+			</a>
+			<a href="#">
+				<span class='zocial-twitter'></span>
+			</a>
+
+		</div>
+
+		<a href="/" class="logo-mobile">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo-main-dark.png">
+		</a>
+
+		<div class="img-nug waypoint blur-in up">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/img-nug.png">
+		</div>
+
+	</header>
+</div>
 
 
 <? elseif ( is_404() ): ?>

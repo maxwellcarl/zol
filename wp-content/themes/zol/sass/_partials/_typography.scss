@@ -5,6 +5,19 @@
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+@font-face {
+    font-family: 'brush';
+    src: url('fonts/DK-Cinnabar-Brush.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'gothamboldregular';

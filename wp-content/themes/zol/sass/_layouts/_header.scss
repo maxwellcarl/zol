@@ -13,27 +13,75 @@
 	top: 0;
 	text-align: center;
 }
-body.scrolled .main-header {
-	background: #000;
-}
-
-
-
 
 .logo {
 	display: block;
 	line-height: 80px;
-  width: 160px;
+  width: 300px;
   color: #222;
 	position: absolute;
 	left: 50%;
-	margin-left: -80px;
+	margin-left: -150px;
 	img { width: 100%; }
 	@include breakpoint(xs) {
 		position: relative;
   }
 }
+.logo-scrolled {
+	display: none;
+	opacity: 0;
+	line-height: 80px;
+  width: 150px;
+  color: #222;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	img { width: 100%; }
+}
+body.scrolled .main-header {
+	background: #000;
+	.logo { display: none; }
+	.logo-scrolled { 
+		display: block;
+		opacity: 1;
+	}
+}
+.social-mobile {
+	text-align: center;
+	display: block;
+	position: relative;
+	top: 30px;
+	color: #414141;
+	font-size: 1.5em;
+	span { margin: 0 5px; }
+}
+.header-mobile {
+	.btn-bar { border: 1px solid #414141; }
+	height: 100vh;
+}
 
+.logo-mobile {
+	display: block; 
+	width: 320px;
+  color: #222;
+	position: relative;
+	margin: 60px auto 0;
+	img { width: 100%; }
+}
+
+.img-nug {
+	display: block;
+	line-height: 80px;
+  width: 250px;
+  color: #222;
+	position: relative;
+	left: 50%;
+	margin-left: -125px;
+	img { width: 100%; }
+	@include breakpoint(xs) {
+		position: relative;
+  }
+}
 
 .social-header {
 	@include ease(2s);

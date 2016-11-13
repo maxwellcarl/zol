@@ -10,11 +10,11 @@
 
 		<h3 class="news-post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
 		
-		<div class="meta">
+		<div class="news-post-meta">
 			<span class="date"><?php the_time('F j, Y'); ?></span>
 		</div>
 		
-		<p><?php the_excerpt(); ?></p>
+		<div class="news-post-content"><?php the_content(); ?></div>
 		
 	</article>
 

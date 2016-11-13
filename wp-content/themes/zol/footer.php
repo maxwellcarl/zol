@@ -2,7 +2,7 @@
 </div><!-- /wrapper -->
 
 
-<section class="parallax-window" data-parallax="scroll" data-image-src="<?php the_field('parallax_window_image')?>" style="width: 100%; height: 600px ;display: block; position: relative;">
+<!-- <section class="parallax-window" data-parallax="scroll" data-image-src="<?php the_field('parallax_window_image')?>" style="width: 100%; height: 600px ;display: block; position: relative;">
 	
 	<?php if( get_field('parallax_window_txt') ): ?>
 	<div class="home-parallax-callout middle waypoint fade-in"><h1>
@@ -11,7 +11,7 @@
 	<?php endif; ?>
 
 
-</section>
+</section> -->
 
 
 <section class="insta">

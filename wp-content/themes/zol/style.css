@@ -1559,29 +1559,29 @@ body.menu-pullout-active .menu-close-btn:after {
   border-bottom: 5px solid;
 }
 
-/* line 38, sass/_layouts/_page.scss */
+/* line 35, sass/_layouts/_page.scss */
 .homepage-blocks {
   position: relative;
   display: block;
 }
-/* line 40, sass/_layouts/_page.scss */
+/* line 37, sass/_layouts/_page.scss */
 .homepage-blocks .block1, .homepage-blocks .block2 {
   height: 400px;
   padding: 30px;
 }
-/* line 44, sass/_layouts/_page.scss */
+/* line 41, sass/_layouts/_page.scss */
 .homepage-blocks .block2 {
   background: #fdff00;
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 52, sass/_layouts/_page.scss */
+/* line 49, sass/_layouts/_page.scss */
 .homepage-about {
   padding: 0;
 }
 
-/* line 58, sass/_layouts/_page.scss */
+/* line 55, sass/_layouts/_page.scss */
 .strainfinder-heading {
   position: relative;
   width: 100%;
@@ -1590,7 +1590,7 @@ body.menu-pullout-active .menu-close-btn:after {
   background-size: cover;
 }
 
-/* line 65, sass/_layouts/_page.scss */
+/* line 62, sass/_layouts/_page.scss */
 .strain-finder-title {
   position: absolute;
   top: 50%;
@@ -1602,12 +1602,12 @@ body.menu-pullout-active .menu-close-btn:after {
   font-family: 'brush';
 }
 
-/* line 72, sass/_layouts/_page.scss */
+/* line 69, sass/_layouts/_page.scss */
 .strain-item {
   height: 200px;
 }
 
-/* line 75, sass/_layouts/_page.scss */
+/* line 72, sass/_layouts/_page.scss */
 .strain-item-text {
   font-size: 2em;
   text-align: center;
@@ -1618,23 +1618,49 @@ body.menu-pullout-active .menu-close-btn:after {
   transform: translate(-50%, -50%);
 }
 
-/* line 81, sass/_layouts/_page.scss */
+/* line 78, sass/_layouts/_page.scss */
 .learn-more-btn {
   border: 3px solid #111;
   color: #111;
   margin: 30px 0;
   min-width: 220px;
 }
-/* line 86, sass/_layouts/_page.scss */
+/* line 83, sass/_layouts/_page.scss */
 .learn-more-btn:hover {
   border: 3px solid #fdff00;
   color: #fdff00;
 }
 
-/* line 94, sass/_layouts/_page.scss */
+/* line 91, sass/_layouts/_page.scss */
 .home-parallax-callout {
   color: white;
   text-align: center;
+}
+
+/* line 100, sass/_layouts/_page.scss */
+.sidebar-widget h4 {
+  margin: 15px 0 0 0;
+}
+
+/* line 105, sass/_layouts/_page.scss */
+.news-post {
+  padding: 0 90px;
+}
+/* line 107, sass/_layouts/_page.scss */
+.news-post img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 111, sass/_layouts/_page.scss */
+.news-post-title {
+  margin-bottom: 0 !important;
+}
+
+/* line 114, sass/_layouts/_page.scss */
+.news-post-meta {
+  margin-bottom: 15px;
+  color: #999;
 }
 
 /* line 7, sass/_layouts/_footer.scss */

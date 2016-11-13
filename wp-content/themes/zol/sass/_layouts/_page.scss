@@ -30,9 +30,6 @@
 
 
 
-
-
-
 // HOMEPAGE // --------------------------------------------------
 
 .homepage-blocks {
@@ -97,7 +94,27 @@
 }
 
 
+// BLOG // --------------------------------------------------
 
+.sidebar-widget {
+	h4 { 
+		margin: 15px 0 0 0;
+	}
+}
+
+.news-post {
+	padding: 0 90px;
+	img { 
+		width: 100%; max-width: 100%;
+	}
+}
+.news-post-title { 
+	margin-bottom: 0 !important; 
+}
+.news-post-meta {
+	margin-bottom: 15px;
+	color: #999;
+}
 
 
 

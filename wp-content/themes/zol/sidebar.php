@@ -10,14 +10,14 @@
 		<a href="/book-now" class="sidebar-btn btn-square">Book Now</a>
 	</div> -->
 
-	<div class="mailchimp sidebar">
+	<div class="mailchimp">
 		<!-- Begin MailChimp Signup Form -->
 		<div id="mc_embed_signup">
 		<form action="//swim-city.us11.list-manage.com/subscribe/post?u=3b66191a700b033d3c5226f84&amp;id=848a6b7e86" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 		    <div id="mc_embed_signup_scroll">
 			
 		<div class="mc-field-group">
-			<h4>Newsletter Signup</h4>
+			<h4 class="mailchimp-heading">Newsletter Signup</h4>
 			<input type="email" placeholder="Enter Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 		</div>
 			<div id="mce-responses" class="clear">

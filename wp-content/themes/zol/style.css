@@ -869,11 +869,17 @@ a img.aligncenter {
   padding: 0 4px 5px;
 }
 
+/* line 543, sass/_partials/_global.scss */
+.sticky-sidebar {
+  position: fixed 	!important;
+  top: 100px 				!important;
+}
+
 /*------------------------------------*\
     PRINT
 \*------------------------------------*/
 @media print {
-  /* line 555, sass/_partials/_global.scss */
+  /* line 556, sass/_partials/_global.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -881,46 +887,46 @@ a img.aligncenter {
     text-shadow: none !important;
   }
 
-  /* line 561, sass/_partials/_global.scss */
+  /* line 562, sass/_partials/_global.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 565, sass/_partials/_global.scss */
+  /* line 566, sass/_partials/_global.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 568, sass/_partials/_global.scss */
+  /* line 569, sass/_partials/_global.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 571, sass/_partials/_global.scss */
+  /* line 572, sass/_partials/_global.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 576, sass/_partials/_global.scss */
+  /* line 577, sass/_partials/_global.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 580, sass/_partials/_global.scss */
+  /* line 581, sass/_partials/_global.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 583, sass/_partials/_global.scss */
+  /* line 584, sass/_partials/_global.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 586, sass/_partials/_global.scss */
+  /* line 587, sass/_partials/_global.scss */
   img {
     max-width: 100% !important;
   }
@@ -928,7 +934,7 @@ a img.aligncenter {
   @page {
     margin: 0.5cm;
   }
-  /* line 592, sass/_partials/_global.scss */
+  /* line 593, sass/_partials/_global.scss */
   p,
   h2,
   h3 {
@@ -936,7 +942,7 @@ a img.aligncenter {
     widows: 3;
   }
 
-  /* line 598, sass/_partials/_global.scss */
+  /* line 599, sass/_partials/_global.scss */
   h2,
   h3 {
     page-break-after: avoid;
@@ -1542,7 +1548,7 @@ body.menu-pullout-active .menu-close-btn:after {
   display: block;
 }
 
-/* line 11, sass/_layouts/_page.scss */
+/* line 9, sass/_layouts/_page.scss */
 .section-content p {
   font-size: 18px;
   line-height: 28px;
@@ -1550,7 +1556,7 @@ body.menu-pullout-active .menu-close-btn:after {
   letter-spacing: 1px;
 }
 
-/* line 19, sass/_layouts/_page.scss */
+/* line 17, sass/_layouts/_page.scss */
 .section-title {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -1559,29 +1565,29 @@ body.menu-pullout-active .menu-close-btn:after {
   border-bottom: 5px solid;
 }
 
-/* line 35, sass/_layouts/_page.scss */
+/* line 33, sass/_layouts/_page.scss */
 .homepage-blocks {
   position: relative;
   display: block;
 }
-/* line 37, sass/_layouts/_page.scss */
+/* line 35, sass/_layouts/_page.scss */
 .homepage-blocks .block1, .homepage-blocks .block2 {
   height: 400px;
   padding: 30px;
 }
-/* line 41, sass/_layouts/_page.scss */
+/* line 39, sass/_layouts/_page.scss */
 .homepage-blocks .block2 {
   background: #fdff00;
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 49, sass/_layouts/_page.scss */
+/* line 47, sass/_layouts/_page.scss */
 .homepage-about {
   padding: 0;
 }
 
-/* line 55, sass/_layouts/_page.scss */
+/* line 53, sass/_layouts/_page.scss */
 .strainfinder-heading {
   position: relative;
   width: 100%;
@@ -1590,7 +1596,7 @@ body.menu-pullout-active .menu-close-btn:after {
   background-size: cover;
 }
 
-/* line 62, sass/_layouts/_page.scss */
+/* line 60, sass/_layouts/_page.scss */
 .strain-finder-title {
   position: absolute;
   top: 50%;
@@ -1602,12 +1608,12 @@ body.menu-pullout-active .menu-close-btn:after {
   font-family: 'brush';
 }
 
-/* line 69, sass/_layouts/_page.scss */
+/* line 67, sass/_layouts/_page.scss */
 .strain-item {
   height: 200px;
 }
 
-/* line 72, sass/_layouts/_page.scss */
+/* line 70, sass/_layouts/_page.scss */
 .strain-item-text {
   font-size: 2em;
   text-align: center;
@@ -1618,49 +1624,88 @@ body.menu-pullout-active .menu-close-btn:after {
   transform: translate(-50%, -50%);
 }
 
-/* line 78, sass/_layouts/_page.scss */
+/* line 76, sass/_layouts/_page.scss */
 .learn-more-btn {
   border: 3px solid #111;
   color: #111;
   margin: 30px 0;
   min-width: 220px;
 }
-/* line 83, sass/_layouts/_page.scss */
+/* line 81, sass/_layouts/_page.scss */
 .learn-more-btn:hover {
   border: 3px solid #fdff00;
   color: #fdff00;
 }
 
-/* line 91, sass/_layouts/_page.scss */
+/* line 89, sass/_layouts/_page.scss */
 .home-parallax-callout {
   color: white;
   text-align: center;
 }
 
-/* line 100, sass/_layouts/_page.scss */
+/* line 98, sass/_layouts/_page.scss */
 .sidebar-widget h4 {
   margin: 15px 0 0 0;
 }
 
-/* line 105, sass/_layouts/_page.scss */
-.news-post {
-  padding: 0 90px;
+/* line 102, sass/_layouts/_page.scss */
+.banner-blog {
+  margin-bottom: -120px;
 }
-/* line 107, sass/_layouts/_page.scss */
+
+/* line 106, sass/_layouts/_page.scss */
 .news-post img {
-  width: 100%;
-  max-width: 100%;
+  width: 130%;
+  max-width: 130%;
+  margin: 10px -15%;
+}
+@media (max-width: 992px) {
+  /* line 106, sass/_layouts/_page.scss */
+  .news-post img {
+    width: 90%;
+    margin: 10px 5%;
+  }
 }
 
-/* line 111, sass/_layouts/_page.scss */
-.news-post-title {
-  margin-bottom: 0 !important;
+/* line 115, sass/_layouts/_page.scss */
+.post-title {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 0 0 60px 0;
+  padding: 7.5px 15px;
 }
 
-/* line 114, sass/_layouts/_page.scss */
-.news-post-meta {
+/* line 121, sass/_layouts/_page.scss */
+.post-meta {
   margin-bottom: 15px;
   color: #999;
+}
+
+/* line 125, sass/_layouts/_page.scss */
+.post-social-item {
+  margin: 3px;
+  font-size: 12px;
+}
+
+/* line 129, sass/_layouts/_page.scss */
+.sidebar {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  padding-right: 15px;
+  top: 500px;
+  width: 200px;
+}
+@media (max-width: 992px) {
+  /* line 129, sass/_layouts/_page.scss */
+  .sidebar {
+    display: none;
+  }
+}
+
+/* line 140, sass/_layouts/_page.scss */
+.mailchimp-heading {
+  margin-bottom: 15px;
 }
 
 /* line 7, sass/_layouts/_footer.scss */

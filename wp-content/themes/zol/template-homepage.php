@@ -79,6 +79,31 @@ get_header(); ?>
 			<a class="btn learn-more-btn" href="/about-us">Learn More</a>
 		</div>
 
+		<div class="container">
+			<div class="row">
+				<?php
+
+				$the_query = new WP_Query( 'post_type=post&posts_per_page=3'  );
+				// The Loop
+				if ( $the_query->have_posts() ) {
+					while ( $the_query->have_posts() ) {
+					$the_query->the_post(); ?>
+						<div class="col-md-4">
+							<a href="<?php the_permalink(); ?>">
+								<h2><?php the_title(); ?></h2>
+								<?php the_post_thumbnail(); ?>
+							</a>
+							<?php the_excerpt(); ?>
+						</div>
+					<?php }
+					/* Restore original Post Data */
+					wp_reset_postdata();
+				} else {
+					// no posts found
+				} ?>
+			</div>
+		</div>
+
 	<?php endwhile; ?>
 	<?php else: ?>
 	<!-- nothing -->

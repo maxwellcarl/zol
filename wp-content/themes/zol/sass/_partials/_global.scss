@@ -540,8 +540,9 @@ a img.aligncenter {
 	margin:0;
 	padding:0 4px 5px;
 }
-.sticky {
-
+.sticky-sidebar {
+	position: fixed 	!important;
+	top: 100px 				!important;
 }
 .bypostauthor {
 

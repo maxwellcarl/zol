@@ -5,8 +5,6 @@
 	@include block;
 }
 
-
-
 .section-content {
 	p {
 		font-size: 18px;
@@ -101,20 +99,46 @@
 		margin: 15px 0 0 0;
 	}
 }
-
+.banner-blog {
+	margin-bottom: -120px;
+}
 .news-post {
-	padding: 0 90px;
 	img { 
-		width: 100%; max-width: 100%;
-	}
+		width: 130%; max-width: 130%;
+		margin: 10px -15%;
+		@include breakpoint(xm) { 
+			width: 90%; 
+			margin: 10px 5%;
+		}
+ 	}
 }
-.news-post-title { 
-	margin-bottom: 0 !important; 
+.post-title {
+	display: inline-block;
+	background: rgba(255,255,255,0.9);
+	margin: 0 0 60px 0;
+	padding: 7.5px 15px;
 }
-.news-post-meta {
+.post-meta {
 	margin-bottom: 15px;
 	color: #999;
 }
-
+.post-social-item {
+	margin: 3px;
+	font-size: 12px;
+}
+.sidebar {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  padding-right: 15px;
+  top: 500px;
+  width: 200px;
+  @include breakpoint(xm) {
+  	display: none;
+  }
+}
+.mailchimp-heading {
+	margin-bottom: 15px;
+}
 
 

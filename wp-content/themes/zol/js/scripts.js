@@ -28,6 +28,11 @@
       } else {
           $("body").removeClass("scrolled");
       }
+      if (scroll >= 400) {
+      	$('.sidebar').addClass('sticky-sidebar');
+      } else {
+      	$('.sidebar').removeClass('sticky-sidebar');
+      }
     });
 	    
 	  
@@ -43,6 +48,8 @@
 
 
 		$('#homecaro').carousel();
+
+
 
 
 

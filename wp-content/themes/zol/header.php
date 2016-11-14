@@ -225,12 +225,19 @@ conditionizr.config({
   $thumb_id = get_post_thumbnail_id();
   $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
   ?>
-	<div class="banner">
+	<div class="banner banner-blog">
 		<img src="<?php echo $thumb_url[0]; ?>" class="page-banner-img">
 	</div>
 
 <? elseif ( is_single() ): ?><!-- single blog page (news) -->
 
+	<?php
+  $thumb_id = get_post_thumbnail_id();
+  $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
+  ?>
+	<div class="banner banner-blog">
+		<img src="<?php echo $thumb_url[0]; ?>" class="page-banner-img">
+	</div>
 
 <? else: ?><!-- all pages -->
 	

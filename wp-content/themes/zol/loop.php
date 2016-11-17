@@ -1,20 +1,27 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-	<article class="news-post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article class="blog-post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-			<a class="news-post-img" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+			<a class="" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 				<?php the_post_thumbnail(); ?>
 			</a>
 		<?php endif; ?>
 
-		<h3 class="news-post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+		<h3 class="blog-post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
 		
-		<div class="news-post-meta">
-			<span class="date"><?php the_time('F j, Y'); ?></span>
+		<div class="blog-post-meta">
+			<span class="author">Posted by: <?php the_author(); ?></span><span class="date"> On Date: <?php the_time('F j, Y'); ?></span>
 		</div>
 		
-		<div class="news-post-content"><?php the_content(); ?></div>
+		<div class="blog-post-content">
+			<?php the_content(); ?>	
+		</div>
+
+		<div class="alignleft"><?php previous_posts_link( '&laquo; Previous Entries' ); ?> wtf</div>
+		<div class="alignright"><?php next_posts_link( 'Next Entries &raquo;', '' ); ?> wtf</div>
+
+
 		
 	</article>
 

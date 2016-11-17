@@ -55,6 +55,9 @@
 		min-height: 500px;
 		padding: 60px 60px;
 		text-align: left;
+		@include breakpoint(xm) { 
+			padding: 30px;
+		}
 		h2 {
 			text-transform: uppercase;
 			//font-size: 1.6em;

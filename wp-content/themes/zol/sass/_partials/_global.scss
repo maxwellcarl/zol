@@ -140,6 +140,9 @@ h6 { font-size: 1.0em; }
 	left: 0;
 	overflow-x: hidden;
 }
+body.menu-pullout-active {
+	overflow-x: hidden;
+}
 body.menu-pullout-active #wrapper {
 	left: 400px;
 	@include breakpoint(xm) {
@@ -229,10 +232,10 @@ body.menu-pullout-active #wrapper {
 	letter-spacing: 2px;
 	font-size: 14px;
 	border-radius: 0;
-	&:hover {
-		border: 3px solid $accent1;
-		color: $accent1;
-	}
+	// &:hover {
+	// 	border: 3px solid $accent1;
+	// 	color: black !important;
+	// }
 }
 
 

@@ -47,7 +47,7 @@
 		});
 
 
-		$('#homecaro').carousel();
+		//$('#homecaro').carousel();
 
 
 

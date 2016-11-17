@@ -9,6 +9,7 @@
 	position: fixed;
 	width: 100%;
 	height: 100px;
+	background: white;
 	z-index: 999;
 	top: 0;
 	text-align: center;
@@ -17,29 +18,33 @@
 .logo {
 	display: block;
 	line-height: 80px;
-  width: 300px;
+  width: 100px;
   color: #222;
 	position: absolute;
+	top: 10px;
 	left: 50%;
-	margin-left: -150px;
+	margin-left: -50px;
 	img { width: 100%; }
 	@include breakpoint(xs) {
 		position: relative;
   }
 }
+
 .logo-scrolled {
 	display: none;
 	opacity: 0;
 	line-height: 80px;
-  width: 150px;
+  width: 100px;
   color: #222;
 	position: absolute;
+	top: 10px;
 	left: 50%;
-	margin-left: -75px;
+	margin-left: -50px;
 	img { width: 100%; }
 }
+
 body.scrolled .main-header {
-	background: #000;
+	//background: rgba(0,0,0,.5);
 	.logo { display: none; }
 	.logo-scrolled { 
 		display: block;
@@ -62,11 +67,10 @@ body.scrolled .main-header {
 
 .logo-mobile {
 	display: block; 
-	width: 320px;
+	width: 260px;
   color: #222;
 	position: relative;
-	margin: 60px auto 0;
-	img { width: 100%; }
+	margin: 60px auto 30px;
 }
 
 .img-nug {
@@ -84,7 +88,7 @@ body.scrolled .main-header {
 }
 
 .social-header {
-	@include ease(2s);
+	@include ease(1s);
 	position: absolute;
 	padding: 30px;
 	right: -2000px;
@@ -93,7 +97,7 @@ body.scrolled .main-header {
 	}
 	a {
 		display: block;
-		color: white;
+		color: black;
 		text-align: right;
 		line-height: 14px;
 		font-size: 12px;
@@ -108,12 +112,28 @@ body.ready .social-header {
 	right: 0;
 }
 
+.tagline {
+	@include ease(2s);
+	width: 120px;
+	position: absolute;
+	left: 50%; 
+	margin-left: -60px;
+	top: 0;
+}
+body.ready .tagline {
+	top: 140px;
+}
+
+
+
+
+
 
 .primary-nav {
 	text-align: center;
 
 	@include breakpoint(xs) {
-		display: none;
+		//display: none;
 		padding-right: 0;
 	}
 	.nav-wrap {
@@ -211,7 +231,7 @@ body.ready .social-header {
 // Navigation// --------------------------------------------------
 
 .menu-pullout-btn {
-	@include ease(2s);
+	@include ease(1s);
 	display: block;
 	z-index: 999;
 	position: absolute;
@@ -219,7 +239,7 @@ body.ready .social-header {
 	left: -2000px;
 	padding: 28px 30px;
 	@include breakpoint(xm) {
-		padding: 20px 15px;
+		padding: 28px 15px;
 	}
 	&:hover { cursor:pointer;}
 	&:hover .navigate-txt { opacity: 1; }
@@ -232,7 +252,8 @@ body.ready .menu-pullout-btn {
 	@include ease(.2s);
 	position: relative;
 	width: 35px;
-	border: 1px solid white;
+	top: 5px;
+	border: 1px solid black;
 	margin-bottom: 8px;
 	@include breakpoint(xm) {
 		width: 25px;
@@ -346,6 +367,9 @@ body.menu-pullout-active .menu-close-btn:after  {
 	overflow: hidden;
 	position: relative;
 	img { width: 100%; }
+	@include breakpoint(xs) {
+		height: auto;
+	}
 }
 .page .banner, .search .banner {
 	height: 300px;
@@ -355,10 +379,6 @@ body.menu-pullout-active .menu-close-btn:after  {
 }
 .search .banner {
 	//background: url(img/defaultbanner.jpg);
-}
-.banner.blog {
-	height: 200px;
-
 }
 
 

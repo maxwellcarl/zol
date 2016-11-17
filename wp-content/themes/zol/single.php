@@ -1,19 +1,16 @@
 <?php get_header(); ?>
 
-	<section class="content-block blog cf">
+<section class="main-content content-block blog cf">
 
-		<div class="col-md-6 col-md-offset-2">
-			<?php get_template_part('loopsingle'); ?>
-			<?php get_template_part('pagination'); ?>
-		</div>
+	<div class="col-md-6 col-md-offset-3">
+		<?php get_template_part('loopsingle'); ?>
+	</div>
 
-		<div>
-			<?php get_sidebar(); ?>
-		</div>
+	<div>
+		<?php get_sidebar(); ?>
+	</div>
 
-	</section>
-
-
+</section>
 
 
 <?php get_footer(); ?>

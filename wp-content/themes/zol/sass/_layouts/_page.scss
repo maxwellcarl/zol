@@ -28,6 +28,9 @@
 
 
 
+
+
+
 // HOMEPAGE // --------------------------------------------------
 
 .homepage-blocks {
@@ -44,12 +47,11 @@
 }
 
 
-.homepage-about {
-	padding: 0;
-}
-.homepage-strainfinder {
 
+
+.homepage-strainfinder {
 }
+
 .strainfinder-heading {
 	position: relative;
 	width: 100%;
@@ -66,66 +68,144 @@
 }
 .strain-item { 
 	height: 200px;
+	&:hover {
+		opacity: .8;
+		cursor: pointer;
+	}
 }
 .strain-item-text {
-	font-size: 2em;
+	font-size: 22px;
+	line-height: 1.2em;
 	text-align: center;
 	display: block;
 	@include center;
 }
+
+
 .learn-more-btn {
 	border: 3px solid #111;
 	color: #111;
 	margin: 30px 0;
 	min-width: 220px;
+	font-weight: 600;
 	&:hover {
-		border: 3px solid $accent1;
-		color: $accent1;
+		opacity: .8;
 	}
 }
 
 
+
+.homepage-playlists {
+	iframe { margin-bottom: 15px; }
+}
+
+
+
+.homepage-news {
+	h3 {
+		font-family: 'Futura Std';
+		margin-bottom: 15px;
+	}
+	a.read-more { display: none; }
+	a.read-more2  {
+		font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		display: block;
+		margin: 30px 0;
+		padding: 0 30px;
+		line-height: 45px;
+		height: 45px;
+		background: black;
+		color: white;
+		text-align: center;
+		width: 220px;
+		text-transform: uppercase;
+		&:hover { cursor:pointer; }
+	}
+}
 
 .home-parallax-callout {
 	color: white;	
 	text-align: center;
+	h1 { font-family: 'brush'; font-size: 48px; line-height: 1.4em; }
 }
+
+
+
+
+
+
+
 
 
 // BLOG // --------------------------------------------------
 
+
+.blog-post {
+
+}
+
+.blog-title {
+	position: absolute;
+  bottom: -20px;
+  left: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  @include breakpoint(xs) {
+		font-size: 16px;
+	}
+}
+
+h1.blog-post-title {
+	font-family: 'Futura Std';
+	font-size: 32px;
+	line-height: 1.2em;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.blog-post-content {
+	padding: 30px 0;
+}
+
 .sidebar-widget {
 	h4 { 
+		font-family: 'Futura Std';
 		margin: 15px 0 0 0;
 	}
+	a { opacity: .5; color: black; }
+	a:hover { opacity: 1; }
 }
 .banner-blog {
 	margin-bottom: -120px;
 }
-.news-post {
-	img { 
-		width: 130%; max-width: 130%;
-		margin: 10px -15%;
-		@include breakpoint(xm) { 
-			width: 90%; 
-			margin: 10px 5%;
-		}
- 	}
+
+
+.blog-meta-share {
+	display: block;
+	margin-top: 15px;
+	a { 
+		display: inline-block;
+		margin-right: 5px;
+		@include ease(.4s);
+			opacity: .5;
+		
+	}
+	a:hover { opacity: 1; 
+  }
 }
-.post-title {
-	display: inline-block;
-	background: rgba(255,255,255,0.9);
-	margin: 0 0 60px 0;
-	padding: 7.5px 15px;
-}
-.post-meta {
-	margin-bottom: 15px;
-	color: #999;
+
+
+.blog-post-meta {
+	opacity: .5;
 }
 .post-social-item {
 	margin: 3px;
 	font-size: 12px;
 }
+
+
+
 .sidebar {
   position: absolute;
   right: 0;
@@ -136,6 +216,10 @@
   @include breakpoint(xm) {
   	display: none;
   }
+}
+.tag-cloud a {
+	display: block;
+	font-size: 14px !important;
 }
 .mailchimp-heading {
 	margin-bottom: 15px;

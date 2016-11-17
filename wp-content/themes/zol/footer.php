@@ -2,17 +2,6 @@
 </div><!-- /wrapper -->
 
 
-<!-- <section class="parallax-window" data-parallax="scroll" data-image-src="<?php the_field('parallax_window_image')?>" style="width: 100%; height: 600px ;display: block; position: relative;">
-	
-	<?php if( get_field('parallax_window_txt') ): ?>
-	<div class="home-parallax-callout middle waypoint fade-in"><h1>
-		<?php the_field('parallax_window_txt' , false, false); ?>
-	</h1></div>
-	<?php endif; ?>
-
-
-</section> -->
-
 
 <section class="insta">
 	<div class="tags" style="position:relative; text-align:center;">
@@ -129,8 +118,8 @@ feed.run();
 $( document ).ready(function() {
 	var viewport = $(window),
 	setVisible = function (e) {
-	    var viewportTop = viewport.scrollTop() - 200,
-	        viewportBottom = viewport.scrollTop() + viewport.height() - 200;
+	    var viewportTop = viewport.scrollTop() - 30,
+	        viewportBottom = viewport.scrollTop() + viewport.height() - 30;
 	    $('.waypoint').each(function () {
 	        var self = $(this),
 	            top = self.offset().top,

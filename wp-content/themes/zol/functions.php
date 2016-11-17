@@ -475,7 +475,8 @@ function footerposts_init() {
 
 
 
-
+add_filter( 'post_thumbnail_html', 'remove_image_classes', 10 );
+add_filter( 'image_send_to_editor', 'remove_image_classes', 10 );
 
 
 

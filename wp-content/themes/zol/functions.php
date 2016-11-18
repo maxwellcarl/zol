@@ -26,6 +26,7 @@ if (function_exists('add_theme_support'))
     add_theme_support('menus');
 
     // Add Thumbnail Theme Support
+
     add_theme_support('post-thumbnails');
     add_image_size('full', 1600, '', true); // Large Thumbnail
     add_image_size('large', 900, '', true); // Large Thumbnail
@@ -473,10 +474,43 @@ function footerposts_init() {
 }
 
 
+add_action('init', 'strains_init');
+function strains_init() {
+    $labels = array(
+        'name' => _x('Strains', 'post type general name'),
+        'singular_name' => _x('Strains', 'post type singular name'),
+        'add_new' => _x('Add New', 'post'),
+        'add_new_item' => __('Add New post'),
+        'edit_item' => __('Edit post'),
+        'new_item' => __('New post'),
+        'view_item' => __('View post'),
+        'search_items' => __('Search posts'),
+        'not_found' => __('No posts found'),
+        'not_found_in_trash' => __('No posts found in Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Strains'
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => null,
+        'supports' => array('title', 'editor', 'thumbnail')
+    );
+    register_post_type('strains', $args);
+}
 
 
-add_filter( 'post_thumbnail_html', 'remove_image_classes', 10 );
-add_filter( 'image_send_to_editor', 'remove_image_classes', 10 );
+
+//add_filter( 'post_thumbnail_html', 'remove_image_classes', 10 );
+//add_filter( 'image_send_to_editor', 'remove_image_classes', 10 );
 
 
 

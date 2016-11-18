@@ -31,16 +31,16 @@ get_header(); ?>
 	</div>
 	<div class="container-fluid">
 		<div class="row fullwidth">
-			<div class="col-xs-6 col-sm-3 no-padding strain-item" style="background:#eee;">
+			<div class="col-xs-6 col-sm-3 no-padding strain-item" style="background:#4FC1E9;">
 				<div class="strain-item-text">Social<br>&amp;<br>Energetic</div>
 			</div>
-			<div class="col-xs-6 col-sm-3 no-padding strain-item"  style="background:#ddd;">
+			<div class="col-xs-6 col-sm-3 no-padding strain-item"  style="background:#48CFAD;">
 				<div class="strain-item-text">Chill<br>&amp;<br>Thoughtful</div>
 			</div>
-			<div class="col-xs-6 col-sm-3 no-padding strain-item"  style="background:#ccc;">
+			<div class="col-xs-6 col-sm-3 no-padding strain-item"  style="background:#FFCE54;">
 				<div class="strain-item-text">Somewhere<br>In<br>Between</div>
 			</div>
-			<div class="col-xs-6 col-sm-3 no-padding strain-item"  style="background:#bbb;">
+			<div class="col-xs-6 col-sm-3 no-padding strain-item"  style="background:#FC6E51;">
 				<div class="strain-item-text">See Them All</div>
 			</div>
 		</div>
@@ -90,8 +90,8 @@ get_header(); ?>
 <section class="homepage-news" style="padding: 30px 0 90px;">
 	<div class="container">
 
-		<div class="col-md-12 col-md-offset-0">
-			<h2 class="section-title" style="float:left;">Cannabis News</h2>
+		<div class="col-md-12 col-md-offset-0" style="margin-bottom: 30px;">
+			<h2 class="section-title" style="text-align:center; padding-bottom: 30px; border-bottom: 3px solid #eee; text-transform: uppercase;">Recent News</h2>
 		</div>
 		<div class="col-md-12 col-md-offset-0">
 		<div class="row" style="margin-top: 30px;">

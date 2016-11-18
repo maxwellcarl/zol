@@ -5,11 +5,10 @@
 <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
 <link href="//www.google-analytics.com" rel="dns-prefetch">
-<link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
-<link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
+<link rel="icon" href="http://www.yoursite.com/favicon.ico?v=2" />
 
 
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png?v=2" />
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/logofulldark-notagline.pngv=2" />
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald:300,400,700" rel="stylesheet">
 

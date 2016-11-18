@@ -1773,17 +1773,21 @@ body.menu-pullout-active .menu-close-btn:after {
 
 /* line 76, sass/_layouts/_page.scss */
 .strain-item-text {
-  font-size: 22px;
-  line-height: 1.2em;
+  font-size: 14px;
+  line-height: 1.6em;
   text-align: center;
+  letter-spacing: 4px;
   display: block;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* line 85, sass/_layouts/_page.scss */
+/* line 89, sass/_layouts/_page.scss */
 .learn-more-btn {
   border: 3px solid #111;
   color: #111;
@@ -1791,26 +1795,32 @@ body.menu-pullout-active .menu-close-btn:after {
   min-width: 220px;
   font-weight: 600;
 }
-/* line 91, sass/_layouts/_page.scss */
+/* line 95, sass/_layouts/_page.scss */
 .learn-more-btn:hover {
   opacity: .8;
 }
 
-/* line 99, sass/_layouts/_page.scss */
+/* line 100, sass/_layouts/_page.scss */
+.strain-img {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* line 110, sass/_layouts/_page.scss */
 .homepage-playlists iframe {
   margin-bottom: 15px;
 }
 
-/* line 105, sass/_layouts/_page.scss */
+/* line 116, sass/_layouts/_page.scss */
 .homepage-news h3 {
   font-family: 'Futura Std';
   margin-bottom: 15px;
 }
-/* line 109, sass/_layouts/_page.scss */
+/* line 120, sass/_layouts/_page.scss */
 .homepage-news a.read-more {
   display: none;
 }
-/* line 110, sass/_layouts/_page.scss */
+/* line 121, sass/_layouts/_page.scss */
 .homepage-news a.read-more2 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
@@ -1824,24 +1834,24 @@ body.menu-pullout-active .menu-close-btn:after {
   width: 220px;
   text-transform: uppercase;
 }
-/* line 122, sass/_layouts/_page.scss */
+/* line 133, sass/_layouts/_page.scss */
 .homepage-news a.read-more2:hover {
   cursor: pointer;
 }
 
-/* line 126, sass/_layouts/_page.scss */
+/* line 137, sass/_layouts/_page.scss */
 .home-parallax-callout {
   color: white;
   text-align: center;
 }
-/* line 129, sass/_layouts/_page.scss */
+/* line 140, sass/_layouts/_page.scss */
 .home-parallax-callout h1 {
   font-family: 'brush';
   font-size: 48px;
   line-height: 1.4em;
 }
 
-/* line 147, sass/_layouts/_page.scss */
+/* line 158, sass/_layouts/_page.scss */
 .blog-title {
   position: absolute;
   bottom: -20px;
@@ -1851,13 +1861,13 @@ body.menu-pullout-active .menu-close-btn:after {
   font-size: 24px;
 }
 @media (max-width: 767px) {
-  /* line 147, sass/_layouts/_page.scss */
+  /* line 158, sass/_layouts/_page.scss */
   .blog-title {
     font-size: 16px;
   }
 }
 
-/* line 159, sass/_layouts/_page.scss */
+/* line 170, sass/_layouts/_page.scss */
 h1.blog-post-title {
   font-family: 'Futura Std';
   font-size: 32px;
@@ -1866,37 +1876,37 @@ h1.blog-post-title {
   padding: 0;
 }
 
-/* line 167, sass/_layouts/_page.scss */
+/* line 178, sass/_layouts/_page.scss */
 .blog-post-content {
   padding: 30px 0;
 }
 
-/* line 172, sass/_layouts/_page.scss */
+/* line 183, sass/_layouts/_page.scss */
 .sidebar-widget h4 {
   font-family: 'Futura Std';
   margin: 15px 0 0 0;
 }
-/* line 176, sass/_layouts/_page.scss */
+/* line 187, sass/_layouts/_page.scss */
 .sidebar-widget a {
   opacity: .5;
   color: black;
 }
-/* line 177, sass/_layouts/_page.scss */
+/* line 188, sass/_layouts/_page.scss */
 .sidebar-widget a:hover {
   opacity: 1;
 }
 
-/* line 179, sass/_layouts/_page.scss */
+/* line 190, sass/_layouts/_page.scss */
 .banner-blog {
   margin-bottom: -120px;
 }
 
-/* line 184, sass/_layouts/_page.scss */
+/* line 195, sass/_layouts/_page.scss */
 .blog-meta-share {
   display: block;
   margin-top: 15px;
 }
-/* line 187, sass/_layouts/_page.scss */
+/* line 198, sass/_layouts/_page.scss */
 .blog-meta-share a {
   display: inline-block;
   margin-right: 5px;
@@ -1906,23 +1916,23 @@ h1.blog-post-title {
   transition: all 0.4s ease-in-out;
   opacity: .5;
 }
-/* line 194, sass/_layouts/_page.scss */
+/* line 205, sass/_layouts/_page.scss */
 .blog-meta-share a:hover {
   opacity: 1;
 }
 
-/* line 199, sass/_layouts/_page.scss */
+/* line 210, sass/_layouts/_page.scss */
 .blog-post-meta {
   opacity: .5;
 }
 
-/* line 202, sass/_layouts/_page.scss */
+/* line 213, sass/_layouts/_page.scss */
 .post-social-item {
   margin: 3px;
   font-size: 12px;
 }
 
-/* line 209, sass/_layouts/_page.scss */
+/* line 220, sass/_layouts/_page.scss */
 .sidebar {
   position: absolute;
   right: 0;
@@ -1932,19 +1942,19 @@ h1.blog-post-title {
   width: 200px;
 }
 @media (max-width: 992px) {
-  /* line 209, sass/_layouts/_page.scss */
+  /* line 220, sass/_layouts/_page.scss */
   .sidebar {
     display: none;
   }
 }
 
-/* line 220, sass/_layouts/_page.scss */
+/* line 231, sass/_layouts/_page.scss */
 .tag-cloud a {
   display: block;
   font-size: 14px !important;
 }
 
-/* line 224, sass/_layouts/_page.scss */
+/* line 235, sass/_layouts/_page.scss */
 .mailchimp-heading {
   margin-bottom: 15px;
 }

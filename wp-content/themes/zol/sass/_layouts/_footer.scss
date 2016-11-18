@@ -128,12 +128,12 @@
 
 
 .main-footer {
-	padding: 120px 0;
+	padding: 120px 0 60px;
 	@include block;
 	width: 100%;
 	background: #111;
 	color: #666;
-	text-align: left;
+	text-align: center;
 	color: white;
 	p { font-size: 11px; line-height: 16px; }
 	li a { font-size: 11px; line-height: 16px;color: #666; }
@@ -159,21 +159,9 @@
 
 
 .site-map {
-	text-align: left;
 	li {
-		display: inline-block;
-		width: 49%;
-		line-height: 18px;
-		height: 18px;
-		vertical-align: top;
-		.sub-menu li a {
-			font-size: 10px;
-		}
-		a { display: block; } 
+		display: block;
 	}
-	li > ul > li { width: 100%; vertical-align: top; }
-	ul.children { margin-top: 20px;}
-	
 }
 
 .footer-social {

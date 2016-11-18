@@ -11,7 +11,7 @@
 		$callout_txt = get_sub_field('callout_text');
 		?>
 		<?php if( $img ): ?>
-    	<div class="item <?php if($row == 1) { echo 'active'; } ?>" style="background: url('<?php echo $img; ?>') top center; background-size: cover;">	
+    	<div class="item item-<?php echo $row ?> <?php if($row == 1) { echo 'active'; } ?>" style="background: url('<?php echo $img; ?>') top center; background-size: cover;">	
     		<?php if( $callout_txt ): ?>
     			<div class="callout-txt middle waypoint">
     				<h1><?php echo $callout_txt; ?></h1>
@@ -22,6 +22,13 @@
     				<?php echo $txt; ?>
     			</div>
     		<?php endif; ?>
+
+    		<?php if($row == 1) { ?>
+    		<div class="slider-nug middle">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/img-nug2.png">
+				</div>
+				<?php } ?>
+
     	</div>
     <?php else: ?>
     	<div class="item <?php if($row == 1) { echo 'active'; } ?>">
@@ -45,9 +52,9 @@
 <!-- Controls -->
 <div class="slider-controls">
   <a class="left pull-left" href="#homecaro" role="button" data-slide="prev">
-    <img width="20" src="<?php echo get_template_directory_uri(); ?>/img/leftarrow.png">
+    <img width="20" src="<?php echo get_template_directory_uri(); ?>/img/leftarrow2.png">
   </a>
   <a class="right pull-right" href="#homecaro" role="button" data-slide="next">
-    <img width="20" src="<?php echo get_template_directory_uri(); ?>/img/rightarrow.png">
+    <img width="20" src="<?php echo get_template_directory_uri(); ?>/img/rightarrow2.png">
   </a>
 </div>

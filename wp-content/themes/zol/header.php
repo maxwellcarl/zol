@@ -56,14 +56,6 @@ conditionizr.config({
 		</nav>
 	</div>
 
-	<div class="cube cube-menu">
-	  <div class="top"></div>
-	  <div class="right"></div>
-	  <div class="bottom"></div>
-	  <div class="left"></div>
-	  <div class="front"></div>
-	  <div class="back"></div>
-	</div>
 
 </header>
 <div class="menu-pullout-overlay"></div>
@@ -77,7 +69,7 @@ conditionizr.config({
 
 
 <!-- header -->
-<header class="main-header clear hidden-xs" role="banner">
+<header class="main-header clear" role="banner">
 	<div class="container">
 
 
@@ -95,12 +87,9 @@ conditionizr.config({
 			<img src="<?php echo get_template_directory_uri(); ?>/img/logofulldark-notagline.png">
 		</a>
 
-		<div class="tagline">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/tag-white.png">
-		</div>
 
-		<div class="social-header">
-			<div class="pull-left" style="margin-right: 15px; margin-top: 5px;">
+		<div class="social-header pull-right">
+			<div class="pull-left hidden-xs" style="margin-right: 15px; margin-top: 5px;">
 				<a target="_blank" href="https://www.instagram.com/zolcannabis/">@zolcannabis</a>
 				<a target="_blank" href="https://www.instagram.com/zolcannabis/">#zol</a>
 			</div>
@@ -120,9 +109,11 @@ conditionizr.config({
 	
 <div class="hidden-xs">
 
+		<div class="tagline">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/tag-black.png">
+		</div>
 
 		<?php get_template_part('includes/homeslider'); ?>
-
 
 		<div id="mouse-icon" class="ease">
 	    <div id="scroll-wheel"></div>
@@ -134,8 +125,12 @@ conditionizr.config({
 <div class="visible-xs">
 	<header class="header-mobile">
 
+		<div class="tagline">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/tag-black.png">
+		</div>
+
+		<!-- 
 		<div class="menu-pullout-btn">
-			<!-- <div class="navigate-txt">Navigate.</div> -->
 			<div class="btn-bar"></div>
 			<div class="btn-bar"></div>
 			<div class="btn-bar"></div>
@@ -160,10 +155,22 @@ conditionizr.config({
 		<a href="/" class="logo-mobile">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/logo-main-dark.png">
 		</a>
+		
 
 		<div class="img-nug waypoint blur-in up">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/img-nug.png">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/img-nug2.png">
 		</div>
+
+		-->
+
+		<div class="slider-nug middle">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/img-nug2.png">
+		</div>
+
+		<div id="mouse-icon" class="ease">
+	    <div id="scroll-wheel"></div>
+	  </div>
+
 
 	</header>
 </div>
@@ -179,7 +186,7 @@ conditionizr.config({
 
 
 	<div class="banner">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/newsletterbg2.jpg" class="page-banner-img">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/basic.jpg" class="page-banner-img">
 		<div class="blog-title">
 			<h1>Blog</h1>
 		</div>
@@ -191,8 +198,7 @@ conditionizr.config({
   $thumb_id = get_post_thumbnail_id();
   $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
   ?>
-	<div class="banner">
-		<img src="<?php echo $thumb_url[0]; ?>" class="page-banner-img">
+	<div class="banner" style="background: url('<?php echo $thumb_url[0]; ?>') no-repeat center center; background-size: cover;">
 	</div>
 
 <? else: ?><!-- all pages -->
@@ -201,8 +207,7 @@ conditionizr.config({
   $thumb_id = get_post_thumbnail_id();
   $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
   ?>
-	<div class="banner">
-		<img src="<?php echo $thumb_url[0]; ?>" class="page-banner-img">
+	<div class="banner" style="background: url('<?php echo $thumb_url[0]; ?>') no-repeat center center; background-size: cover;">
 	</div>
 
 

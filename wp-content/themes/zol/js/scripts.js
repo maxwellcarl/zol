@@ -5,6 +5,9 @@
 
 		// MELLOW SITE LOAD OVERLAY
 		$('body').addClass('ready');
+		setTimeout(function(){
+			$('body').addClass('ready2');
+		}, 1000);
 		//$('body').addClass('no-scroll');
 
     $('.site-overlay').fadeOut(800);

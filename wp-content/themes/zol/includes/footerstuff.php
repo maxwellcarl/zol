@@ -4,15 +4,17 @@
 	$loop = new WP_Query($args);
 	while ($loop->have_posts()) : $loop->the_post(); ?>
 
-		<div class="col-sm-3">
-			<h4>Links / Resources</h4>
+
+		<div class="col-sm-4">
+			<h4>Social Media</h4>
+			<a style="font-size: 11px;" href="https://www.instagram.com/zolcannabis/">@zolcannabis</a>
 		</div>
-		<div class="col-sm-3">
+		<div class="col-sm-4">
 			<h4>Contact</h4>
-			<a style="font-size: 11px;" href="http://maxwellcarlscott.com">maxwellcarlscott.com</a>
+			<a style="font-size: 11px;" href="mailto:info@zolcannabis.com">info@zolcannabis.com</a>
 
 		</div>
-		<div class="col-sm-6 site-map">
+		<div class="col-sm-4 site-map">
 			<h4>Site Map</h4>
 			<?php
 			  $args = array(
@@ -30,6 +32,10 @@
 			    $out = '<ul class="page_post">' . $out . '</ul>';
 			    echo $out;
 			?>
+		</div>
+
+		<div class="col-sm-12">
+			<img style="display:block; margin: 60px auto 0px; opacity: .1;" width="120" src="<?php echo get_template_directory_uri(); ?>/img/logofullwhite.png">
 		</div>
 		
 

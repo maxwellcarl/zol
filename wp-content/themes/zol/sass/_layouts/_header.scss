@@ -13,17 +13,13 @@
 	z-index: 999;
 	top: 0;
 	text-align: center;
+	border-bottom: 1px solid #eee;
 }
 
 .logo {
-	display: block;
-	line-height: 80px;
+	display: inline-block;
   width: 100px;
-  color: #222;
-	position: absolute;
-	top: 10px;
-	left: 50%;
-	margin-left: -50px;
+  margin-top: 15px;
 	img { width: 100%; }
 	@include breakpoint(xs) {
 		position: relative;
@@ -61,7 +57,7 @@ body.scrolled .main-header {
 	span { margin: 0 5px; }
 }
 .header-mobile {
-	.btn-bar { border: 1px solid #414141; }
+	@include block;
 	height: 100vh;
 }
 
@@ -73,24 +69,49 @@ body.scrolled .main-header {
 	margin: 60px auto 30px;
 }
 
+
 .img-nug {
 	display: block;
-	line-height: 80px;
-  width: 250px;
+  width: 200px;
   color: #222;
 	position: relative;
 	left: 50%;
-	margin-left: -125px;
+	margin-left: -100px;
 	img { width: 100%; }
 	@include breakpoint(xs) {
 		position: relative;
   }
 }
 
+
+
+.slider-nug {
+	@include ease(1s);
+	display: block;
+  width: 200px;
+	opacity: 0;
+	visibility: hidden;
+	top: 70vh;
+	img { width: 100%; }
+	@include breakpoint(xs) {
+		position: relative;
+  }
+}
+body.ready2 .slider-nug {
+	opacity: 1;
+	visibility: visible;
+	top: 55vh;
+}
+
+
+
+
+
 .social-header {
 	@include ease(1s);
 	position: absolute;
 	padding: 30px;
+	top: 0;
 	right: -2000px;
 	.insta-logo {
 		margin-top: 3px;
@@ -112,6 +133,8 @@ body.ready .social-header {
 	right: 0;
 }
 
+
+
 .tagline {
 	@include ease(2s);
 	width: 120px;
@@ -119,9 +142,10 @@ body.ready .social-header {
 	left: 50%; 
 	margin-left: -60px;
 	top: 0;
+	z-index: 9;
 }
 body.ready .tagline {
-	top: 140px;
+	top: 120px;
 }
 
 
@@ -372,7 +396,7 @@ body.menu-pullout-active .menu-close-btn:after  {
 	}
 }
 .page .banner, .search .banner {
-	height: 300px;
+	height: 500px;
 }
 .contact .banner {
 	height: 500px;
@@ -404,12 +428,14 @@ body.menu-pullout-active .menu-close-btn:after  {
 			position: absolute;
 			width: 100%; height: 100%;
 			top: 0; left: 0;
-			background:rgba(black, .6); 
+			//background:rgba(black, .6); 
+			background: rgba(white, .1); 
 			z-index: 9999;
 		}
 		.callout-txt {
 			@include ease(1s);
 			h1 {
+				font-family: 'brush';
 				text-align: center;
 				font-size: 4em;
 				line-height: 6em;
@@ -446,7 +472,6 @@ body.menu-pullout-active .menu-close-btn:after  {
 		.slider-controls .right { margin-right: 0; }
 	}
 }
-
 
 
 

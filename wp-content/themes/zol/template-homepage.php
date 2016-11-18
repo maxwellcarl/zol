@@ -54,10 +54,10 @@ get_header(); ?>
 		$aboutcontent = new WP_Query( 'pagename=about-us' );
 		while ( $aboutcontent->have_posts() ) : $aboutcontent->the_post();
 		?>
-		<div class="col-md-3 col-md-offset-1">
+		<div class="col-md-3 col-md-offset-1 col-xs-12" style="margin-bottom: 30px;">
 			<h2 class="section-title pull-left waypoint slide-in"><?php the_title(); ?></h2>
 		</div>
-		<div class="section-content col-md-7">
+		<div class="section-content col-md-7 col-xs-12">
 			<?php the_content(); ?>
 
 			<a class="btn learn-more-btn" href="/about-us">Learn More</a>
@@ -72,10 +72,10 @@ get_header(); ?>
 
 <section class="homepage-playlists" style="padding: 30px 0 90px;">
 	<div class="container">
-		<div class="col-md-3 col-md-offset-1">
+		<div class="col-md-3 col-md-offset-1 col-xs-12" style="margin-bottom: 30px;">
 			<h2 class="section-title pull-left waypoint slide-in">Cannabis Playlists</h2>
 		</div>
-		<div class="col-md-7 playlists">
+		<div class="col-md-7 playlists col-xs-12">
 			<?php if( get_field('playlists') ): ?>
 				<?php the_field('playlists' , false, false); ?>
 			<?php endif; ?>

@@ -49,6 +49,16 @@
 		<?php get_template_part('includes/footerstuff'); ?>
 	
 	</div>
+
+	<div class="cube" style="margin-top: 120px;">
+		  <div class="top"></div>
+		  <div class="right"></div>
+		  <div class="bottom"></div>
+		  <div class="left"></div>
+		  <div class="front"></div>
+		  <div class="back"></div>
+	</div>
+	<p style="position:relative; text-align:center; opacity:.8;">Webdesign by <a href="http://ditigalsauna.com">digitalsauna.com</a> | <a href="http://maxwellcarlscott.com">maxwellcarlscott.com</a></p>
 </footer>
 
 

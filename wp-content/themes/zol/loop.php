@@ -17,11 +17,6 @@
 		<div class="blog-post-content">
 			<?php the_content(); ?>	
 		</div>
-
-		<div class="alignleft"><?php previous_posts_link( '&laquo; Previous Entries' ); ?> wtf</div>
-		<div class="alignright"><?php next_posts_link( 'Next Entries &raquo;', '' ); ?> wtf</div>
-
-
 		
 	</article>
 

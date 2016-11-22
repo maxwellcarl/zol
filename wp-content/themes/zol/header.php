@@ -183,13 +183,21 @@ conditionizr.config({
 
 <? elseif ( is_home() ): ?><!-- blog page (news) -->
 
-
 	<div class="banner">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/basic.jpg" class="page-banner-img">
-		<div class="blog-title">
-			<h1>Blog</h1>
-		</div>
+		<h1 class="page-title vertical waypoint fade-in"> Cannabis Blog</h1>
+		<h2 class="page-title2 vertical waypoint fade-in"><div style="opacity:.8">Latest news from Zol Cannabis</div></h2>
 	</div>
+
+
+<? elseif ( is_archive() ): ?><!-- blog page (news) -->
+
+	<div class="banner">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/newsletterbg2.jpg" class="page-banner-img">
+		<h1 class="page-title vertical waypoint fade-in"> Post Archives</h1>
+		<h2 class="page-title2 vertical waypoint fade-in"><div style="opacity:.8"><?php single_cat_title('Category:  '); ?></div></h2>
+	</div>
+
 
 <? elseif ( is_single() ): ?><!-- single blog page (news) -->
 
@@ -198,6 +206,11 @@ conditionizr.config({
   $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
   ?>
 	<div class="banner" style="background: url('<?php echo $thumb_url[0]; ?>') no-repeat center center; background-size: cover;">
+		<?php if( get_field('page_header') ): ?>
+			<h1 class="page-title vertical waypoint fade-in"> <?php the_field('page_header'); ?></h1>
+		<?php endif; ?>
+			<h2 class="page-title2 vertical waypoint fade-in"><div style="opacity:.8"><span class="author">Posted by: <?php the_author(); ?></span>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="date"><?php the_time('F j, Y'); ?></span></div>
+			</h2>
 	</div>
 
 <? else: ?><!-- all pages -->
@@ -207,6 +220,14 @@ conditionizr.config({
   $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
   ?>
 	<div class="banner" style="background: url('<?php echo $thumb_url[0]; ?>') no-repeat center center; background-size: cover;">
+		
+
+		<?php if( get_field('page_header') ): ?>
+			<h1 class="page-title vertical waypoint fade-in"> <?php the_field('page_header'); ?></h1>
+		<?php endif; ?>
+		<?php if( get_field('page_subheader') ): ?>
+			<h2 class="page-title2 vertical waypoint fade-in"><div style="opacity:.8"><?php the_field('page_subheader'); ?></div></h2>
+		<?php endif; ?>
 	</div>
 
 

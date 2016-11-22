@@ -739,7 +739,7 @@ body.scrolled #mouse-icon {
   display: block;
   position: absolute;
   top: 5px;
-  left: 6px;
+  left: 7px;
   background: #222;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1591,24 +1591,52 @@ body.menu-pullout-active .menu-close-btn:after {
   height: 500px;
 }
 
-/* line 411, sass/_layouts/_header.scss */
+/* line 409, sass/_layouts/_header.scss */
+h1.page-title {
+  font-family: 'gothammediumregular';
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-left: -1px;
+  font-size: 24px;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 420, sass/_layouts/_header.scss */
+h2.page-title2 {
+  font-family: 'gothammediumregular';
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-left: -1px;
+  font-size: 14px;
+  margin-top: 65px;
+  width: 100%;
+  text-align: center;
+  opacity: .5;
+  padding: 0 15px;
+}
+
+/* line 437, sass/_layouts/_header.scss */
 .homepage-slider {
   overflow: hidden;
   position: relative;
   height: 100vh;
   background: #111;
 }
-/* line 420, sass/_layouts/_header.scss */
+/* line 446, sass/_layouts/_header.scss */
 .homepage-slider .item {
   height: 100vh;
 }
 @media (max-width: 767px) {
-  /* line 420, sass/_layouts/_header.scss */
+  /* line 446, sass/_layouts/_header.scss */
   .homepage-slider .item {
     height: 300px;
   }
 }
-/* line 426, sass/_layouts/_header.scss */
+/* line 452, sass/_layouts/_header.scss */
 .homepage-slider .item::after {
   content: '';
   position: absolute;
@@ -1619,7 +1647,7 @@ body.menu-pullout-active .menu-close-btn:after {
   background: rgba(255, 255, 255, 0.1);
   z-index: 9999;
 }
-/* line 435, sass/_layouts/_header.scss */
+/* line 461, sass/_layouts/_header.scss */
 .homepage-slider .item .callout-txt {
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -1630,7 +1658,7 @@ body.menu-pullout-active .menu-close-btn:after {
   visibility: hidden;
   margin-top: 60px;
 }
-/* line 437, sass/_layouts/_header.scss */
+/* line 463, sass/_layouts/_header.scss */
 .homepage-slider .item .callout-txt h1 {
   font-family: 'brush';
   text-align: center;
@@ -1641,13 +1669,13 @@ body.menu-pullout-active .menu-close-btn:after {
   letter-spacing: 2px;
   z-index: 99999;
 }
-/* line 451, sass/_layouts/_header.scss */
+/* line 477, sass/_layouts/_header.scss */
 .homepage-slider .item .callout-txt.visible {
   opacity: 1;
   visibility: visible;
   margin-top: 0;
 }
-/* line 457, sass/_layouts/_header.scss */
+/* line 483, sass/_layouts/_header.scss */
 .homepage-slider .item .slide-text {
   background: white;
   color: black;
@@ -1660,18 +1688,18 @@ body.menu-pullout-active .menu-close-btn:after {
   border-left: 15px solid #fdff00;
   z-index: 99999;
 }
-/* line 471, sass/_layouts/_header.scss */
+/* line 497, sass/_layouts/_header.scss */
 .homepage-slider:hover .slider-controls .left {
   margin-left: 0;
 }
-/* line 472, sass/_layouts/_header.scss */
+/* line 498, sass/_layouts/_header.scss */
 .homepage-slider:hover .slider-controls .right {
   margin-right: 0;
 }
 
 /* Carousel Fading slide */
 /* Safari Fix */
-/* line 526, sass/_layouts/_header.scss */
+/* line 552, sass/_layouts/_header.scss */
 .slider-controls {
   position: absolute;
   top: 50%;
@@ -1679,7 +1707,7 @@ body.menu-pullout-active .menu-close-btn:after {
   height: 0;
   margin-top: -45px;
 }
-/* line 532, sass/_layouts/_header.scss */
+/* line 558, sass/_layouts/_header.scss */
 .slider-controls .left {
   margin-left: -100px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1687,7 +1715,7 @@ body.menu-pullout-active .menu-close-btn:after {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 533, sass/_layouts/_header.scss */
+/* line 559, sass/_layouts/_header.scss */
 .slider-controls .right {
   margin-right: -100px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1695,7 +1723,7 @@ body.menu-pullout-active .menu-close-btn:after {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 534, sass/_layouts/_header.scss */
+/* line 560, sass/_layouts/_header.scss */
 .slider-controls a {
   padding: 0 15px;
 }
@@ -1716,11 +1744,10 @@ body.menu-pullout-active .menu-close-btn:after {
 
 /* line 17, sass/_layouts/_page.scss */
 .section-title {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'brush';
+  font-size: 36px;
   letter-spacing: 2px;
   padding-bottom: 15px;
-  border-bottom: 5px solid;
 }
 
 /* line 36, sass/_layouts/_page.scss */
@@ -1802,56 +1829,109 @@ body.menu-pullout-active .menu-close-btn:after {
 
 /* line 100, sass/_layouts/_page.scss */
 .strain-img {
-  width: 300px;
-  margin: 0 auto;
+  max-width: 300px;
+}
+/* line 102, sass/_layouts/_page.scss */
+.strain-img img {
+  position: relative;
+  display: block;
+  top: 60px;
+  margin-bottom: 90px;
 }
 
 /* line 110, sass/_layouts/_page.scss */
+.strain-finders {
+  text-align: center;
+  padding: 30px 0 60px;
+}
+/* line 113, sass/_layouts/_page.scss */
+.strain-finders .block {
+  width: 280px;
+  margin: 0 10px 60px;
+  display: inline-block;
+}
+/* line 117, sass/_layouts/_page.scss */
+.strain-finders .block img {
+  margin: 30px auto;
+}
+/* line 119, sass/_layouts/_page.scss */
+.strain-finders .block1:hover a {
+  border: 3px solid yellow;
+}
+/* line 120, sass/_layouts/_page.scss */
+.strain-finders .block2:hover a {
+  border: 3px solid blue;
+}
+/* line 121, sass/_layouts/_page.scss */
+.strain-finders .block3:hover a {
+  border: 3px solid purple;
+}
+/* line 123, sass/_layouts/_page.scss */
+.strain-finders .block-tab {
+  display: inline-block;
+  border: 3px solid;
+  font-weight: 600;
+  margin-bottom: 30px;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 30px;
+  width: 100%;
+}
+
+/* line 225, sass/_layouts/_page.scss */
 .homepage-playlists iframe {
   margin-bottom: 15px;
 }
 
-/* line 116, sass/_layouts/_page.scss */
+/* line 231, sass/_layouts/_page.scss */
 .homepage-news h3 {
   font-family: 'Futura Std';
   margin-bottom: 15px;
 }
-/* line 120, sass/_layouts/_page.scss */
+/* line 235, sass/_layouts/_page.scss */
 .homepage-news a.read-more {
   display: none;
 }
-/* line 121, sass/_layouts/_page.scss */
+/* line 236, sass/_layouts/_page.scss */
 .homepage-news a.read-more2 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
   margin: 30px 0;
   padding: 0 30px;
-  line-height: 45px;
-  height: 45px;
+  line-height: 44px;
+  height: 50px;
   background: black;
   color: white;
   text-align: center;
   width: 220px;
   text-transform: uppercase;
+  border: 3px solid yellow;
 }
-/* line 133, sass/_layouts/_page.scss */
+/* line 249, sass/_layouts/_page.scss */
 .homepage-news a.read-more2:hover {
   cursor: pointer;
 }
 
-/* line 137, sass/_layouts/_page.scss */
+/* line 253, sass/_layouts/_page.scss */
 .home-parallax-callout {
   color: white;
   text-align: center;
 }
-/* line 140, sass/_layouts/_page.scss */
+/* line 256, sass/_layouts/_page.scss */
 .home-parallax-callout h1 {
   font-family: 'brush';
   font-size: 48px;
   line-height: 1.4em;
 }
 
-/* line 158, sass/_layouts/_page.scss */
+/* line 270, sass/_layouts/_page.scss */
+.blog-post {
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #eee;
+}
+
+/* line 276, sass/_layouts/_page.scss */
 .blog-title {
   position: absolute;
   bottom: -20px;
@@ -1861,52 +1941,58 @@ body.menu-pullout-active .menu-close-btn:after {
   font-size: 24px;
 }
 @media (max-width: 767px) {
-  /* line 158, sass/_layouts/_page.scss */
+  /* line 276, sass/_layouts/_page.scss */
   .blog-title {
     font-size: 16px;
   }
 }
 
-/* line 170, sass/_layouts/_page.scss */
+/* line 288, sass/_layouts/_page.scss */
 h1.blog-post-title {
   font-family: 'Futura Std';
   font-size: 32px;
   line-height: 1.2em;
   margin-bottom: 10px;
   padding: 0;
+  margin: 30px 0;
 }
 
-/* line 178, sass/_layouts/_page.scss */
+/* line 297, sass/_layouts/_page.scss */
+h3.blog-post-title {
+  margin: 30px 0 0;
+}
+
+/* line 302, sass/_layouts/_page.scss */
 .blog-post-content {
   padding: 30px 0;
 }
 
-/* line 183, sass/_layouts/_page.scss */
+/* line 307, sass/_layouts/_page.scss */
 .sidebar-widget h4 {
   font-family: 'Futura Std';
   margin: 15px 0 0 0;
 }
-/* line 187, sass/_layouts/_page.scss */
+/* line 311, sass/_layouts/_page.scss */
 .sidebar-widget a {
   opacity: .5;
   color: black;
 }
-/* line 188, sass/_layouts/_page.scss */
+/* line 312, sass/_layouts/_page.scss */
 .sidebar-widget a:hover {
   opacity: 1;
 }
 
-/* line 190, sass/_layouts/_page.scss */
+/* line 314, sass/_layouts/_page.scss */
 .banner-blog {
   margin-bottom: -120px;
 }
 
-/* line 195, sass/_layouts/_page.scss */
+/* line 319, sass/_layouts/_page.scss */
 .blog-meta-share {
   display: block;
   margin-top: 15px;
 }
-/* line 198, sass/_layouts/_page.scss */
+/* line 322, sass/_layouts/_page.scss */
 .blog-meta-share a {
   display: inline-block;
   margin-right: 5px;
@@ -1916,23 +2002,23 @@ h1.blog-post-title {
   transition: all 0.4s ease-in-out;
   opacity: .5;
 }
-/* line 205, sass/_layouts/_page.scss */
+/* line 329, sass/_layouts/_page.scss */
 .blog-meta-share a:hover {
   opacity: 1;
 }
 
-/* line 210, sass/_layouts/_page.scss */
+/* line 334, sass/_layouts/_page.scss */
 .blog-post-meta {
   opacity: .5;
 }
 
-/* line 213, sass/_layouts/_page.scss */
+/* line 337, sass/_layouts/_page.scss */
 .post-social-item {
   margin: 3px;
   font-size: 12px;
 }
 
-/* line 220, sass/_layouts/_page.scss */
+/* line 344, sass/_layouts/_page.scss */
 .sidebar {
   position: absolute;
   right: 0;
@@ -1942,19 +2028,19 @@ h1.blog-post-title {
   width: 200px;
 }
 @media (max-width: 992px) {
-  /* line 220, sass/_layouts/_page.scss */
+  /* line 344, sass/_layouts/_page.scss */
   .sidebar {
     display: none;
   }
 }
 
-/* line 231, sass/_layouts/_page.scss */
+/* line 355, sass/_layouts/_page.scss */
 .tag-cloud a {
   display: block;
   font-size: 14px !important;
 }
 
-/* line 235, sass/_layouts/_page.scss */
+/* line 359, sass/_layouts/_page.scss */
 .mailchimp-heading {
   margin-bottom: 15px;
 }

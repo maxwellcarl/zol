@@ -3,7 +3,7 @@
 <section class="main-content content-block blog cf">
 
 	<div class="col-md-6 col-md-offset-3">
-		<?php get_template_part('loopsingle'); ?>
+		<?php get_template_part('loop'); ?>
 	</div>
 
 	<div>

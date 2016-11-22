@@ -1,19 +1,15 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
+<section class="main-content content-block blog cf">
 
-			<h1><?php _e( 'Categories for ', 'html5blank' ); single_cat_title(); ?></h1>
+	<div class="col-md-6 col-md-offset-3">
+		<?php get_template_part('loop'); ?>
+	</div>
 
-			<?php get_template_part('loop'); ?>
+	<div>
+		<?php get_sidebar(); ?>
+	</div>
 
-			<?php get_template_part('pagination'); ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+</section>
 
 <?php get_footer(); ?>

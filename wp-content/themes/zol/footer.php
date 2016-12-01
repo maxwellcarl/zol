@@ -5,7 +5,7 @@
 
 <section class="insta">
 	<div class="tags" style="position:relative; text-align:center;">
-		#something
+		#zol
 	</div>
 
 	<h6 style="margin-top: 10px auto;"><img src="<?php echo get_template_directory_uri(); ?>/img/ints.png" width="25">&nbsp;&nbsp;<a href="https://www.instagram.com/zolcannabis/" target='_blank'>ZOLCANNABIS</a></h6>

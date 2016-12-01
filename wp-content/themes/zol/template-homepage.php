@@ -1,6 +1,8 @@
 <?php 
 /* Template Name: Homepage */ 
 get_header(); ?>
+
+
 <section class="homepage-blocks cf">
 	<div class="row fullwidth">
 		<?php if( get_field('callout_block_img') ): ?>
@@ -55,7 +57,7 @@ get_header(); ?>
 			<div class="row cf" style="margin-bottom: 120px;">
 				<div class="col-md-4 col-md-offset-1" id="strain-<?php echo $row ?>">
 					<h1 style="font-family: 'brush'; position: absolute; width: 100%; z-index: 100; font-size: 36px;"><?php the_title(); ?></h1>
-				  <div class="strain-img waypoint blur-in up" style="max-width: 300px; margin: 0 auto; display: block;">
+				  <div class="strain-img waypoint fade-in" style="max-width: 300px; margin: 0 auto; display: block;">
 				  	<?php the_post_thumbnail(); ?>
 				  </div>
 
@@ -103,6 +105,9 @@ get_header(); ?>
 		</div>
 	</div>
 </section> -->
+
+
+
 
 <section class="homepage-about" style="padding: 30px 0 90px;">
 	<div class="container">
@@ -171,7 +176,6 @@ get_header(); ?>
 		</div>
 
 		<!-- <a class="cf read-more2 full-blog-link" href="/blog">Full BLog</a> -->
-
 
 	</div>
 </section>

@@ -55,8 +55,6 @@
 
 
 
-
-
 		
 		// SCROLL TO FUNCTION
 		$(function() {

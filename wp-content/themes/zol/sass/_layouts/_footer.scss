@@ -24,9 +24,6 @@
 	text-align: center;
 	width: 110%;
 	left: -5%;
-	-ms-transform: rotate(-1deg); /* IE 9 */
-  -webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
-  transform: rotate(-1deg);
 	a {
 		display: inline-block;
 		width: 15%;
@@ -216,6 +213,13 @@
   z-index: 9999;
   text-align: center;
   text-transform: uppercase;
+
+  @include breakpoint(xm) { 
+  	width: 100%;
+  	height: 100%;
+  	padding: 30px 15px;
+  }
+
   p { 
   	font-size: 11px; opacity: .3; 
   	text-transform: none;
@@ -229,6 +233,9 @@
   	visibility: visible;
   	opacity: 1;
   	margin-top: -30px;
+  	@include breakpoint(xm) { 
+  		margin-top: 0;
+  	}
   }
 }
 .age-modal-overlay {
@@ -251,6 +258,7 @@
 .age-btn {
 	border: 3px solid white;
 	color: white;
+	margin:6px;
 	&:hover {
 		border: 3px solid $accent1;
 		color: $accent1;

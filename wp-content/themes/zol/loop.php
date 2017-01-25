@@ -13,6 +13,9 @@
 		<div class="blog-post-meta">
 			<span class="author">Posted by: <?php the_author(); ?></span><span class="date"> On Date: <?php the_time('F j, Y'); ?></span>
 		</div>
+		<div class="blog-meta-share">
+			<span style="float:left; opacity: .5; margin-right: 5px; " class="share-txt">SHARE: &nbsp;</span><?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
+		</div>
 		
 		<div class="blog-post-content">
 			<?php the_content(); ?>	

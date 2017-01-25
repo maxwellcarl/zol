@@ -16,9 +16,11 @@ get_header(); ?>
 			<div class="block2">
 				<div class="middle">
 					<div class="waypoint up">
-						<h2><?php the_field('callout_block_text' , false, false); ?></h2>
-						<a href="mailto:info@zolcannabis.com" class="btn learn-more-btn">Hook It Up</a>
-						<p style="font-size: 9px;">Get in touch with us and we'll keep you in the loop</p>
+						<h2><?php the_field('callout_block_text' , false, false); ?></h2>						
+						<div class="hookup-contact-form ">
+							<?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?>
+						</div>
+						<p style="font-size: 9px;">Get in touch with us and we'll keep you in the loop!</p>
 					</div>
 					
 				</div>
@@ -153,7 +155,7 @@ get_header(); ?>
 	<div class="container">
 
 		<div class="col-md-12 col-md-offset-0" style="margin-bottom: 30px;">
-			<h2 class="section-title" style="text-align:center; padding-bottom: 30px; border-bottom: 3px solid #eee; text-transform: uppercase;">Recent News</h2>
+			<h2 class="section-title" style="text-align:center; padding-bottom: 30px; border-bottom: 1px solid #eee; text-transform: uppercase;">Recent News</h2>
 		</div>
 		<div class="col-md-12 col-md-offset-0">
 		<div class="row" style="margin-top: 30px;">
@@ -162,8 +164,7 @@ get_header(); ?>
 			$loop = new WP_Query($args);
 			while ($loop->have_posts()) : $loop->the_post(); ?>
 			<div class="col-md-4">
-				    <a style="display:block; margin-bottom: 30px;" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-				        <?php the_post_thumbnail('full');  ?>
+				    <a style="display:block; margin-bottom: 30px; background: url('<?php the_post_thumbnail_url('large');  ?>') no-repeat center center; background-size: cover; height: 200px; overflow: hidden;" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 				    </a>
 				<h3><?php the_title(); ?></h3>
 				<p><?php the_excerpt(); ?></p>

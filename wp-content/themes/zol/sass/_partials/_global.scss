@@ -110,6 +110,9 @@ h6 { font-size: 1.0em; }
 
 .main-content {
 	padding: 60px 0;
+	@include breakpoint(xm) {
+		padding: 30px 0;
+	}
 
 	// formating for text
 	h1,h2,h3,h4,h5,h6 { 
@@ -140,15 +143,19 @@ h6 { font-size: 1.0em; }
 	left: 0;
 	overflow-x: hidden;
 }
+
 body.menu-pullout-active {
 	overflow-x: hidden;
 }
 body.menu-pullout-active #wrapper {
-	left: 400px;
-	@include breakpoint(xm) {
-		left: 100vw;
-	}
+	overflow-x: hidden;
 }
+// body.menu-pullout-active #wrapper {
+// 	left: 400px;
+// 	@include breakpoint(xm) {
+// 		left: 100vw;
+// 	}
+// }
 
 .no-padding { padding: 0; }
 
@@ -269,6 +276,98 @@ input[type="submit"] {
   display: block;
   text-transform: uppercase;
 }
+
+
+
+
+
+.hookup-contact-form {
+	input {
+		background: white;
+    color: #111;
+    border: 0;
+    padding: 18px;
+    height: 50px;
+    line-height: 50px;
+    width: 80%;
+    margin: 10px auto;
+	}
+	input[type="submit"] {
+		border: 3px solid #111;
+    color: #111;
+    margin: 10px 0;
+    min-width: 220px;
+    display: inline-block;
+    width: 120px;
+    padding: 0 30px;
+    font-weight: 600;
+    background: transparent;
+    height: 55px;
+    line-height: 52px;
+    &:hover {
+    	opacity: 1;
+    }
+	}
+	.ajax-loader {
+		display: none;
+	}
+	.wpcf7-response-output { border: 0; font-size: 10px; color:green; }
+	.wpcf7-validation-errors { display: none !important; 
+		height: 0; overflow: hidden; opacity: 0; visibility: hidden;
+	}
+}
+
+.contact-page-form {
+	float: left;
+	p {
+		clear:both;
+	}
+	input {
+		background: #eee;
+    color: black;
+    border: 0;
+    padding: 18px;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    margin: 10px auto;
+    float: left;
+	}
+	input[type="submit"] {
+		border: 3px solid #111;
+    color: #111;
+    margin: 10px 0;
+    min-width: 220px;
+    display: inline-block;
+    width: 120px;
+    padding: 0 30px;
+    font-weight: 600;
+    background: transparent;
+    height: 55px;
+    line-height: 52px;
+    &:hover {
+    	opacity: 1;
+    }
+	}
+	textarea {
+		background: #eee;
+    color: black;
+    border: 0;
+    padding: 18px;
+    width: 100%;
+    margin: 10px auto;
+    float: left;
+    max-height: 300px;
+	}
+	.ajax-loader {
+		display: none;
+	}
+	.wpcf7-response-output { border: 0; font-size: 10px; color:green; }
+	.wpcf7-validation-errors { display: none !important; 
+		height: 0; overflow: hidden; opacity: 0; visibility: hidden;
+	}
+}
+
 
 
 
@@ -425,7 +524,7 @@ body.scrolled #mouse-icon {
   	display:block;
   	position:absolute;
   	top:5px;
-  	left: 7px;
+  	left: 6px;
   	background: #222;
   	-webkit-border-radius:3px;
   	-moz-border-radius:3px;

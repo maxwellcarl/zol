@@ -7,11 +7,11 @@
 
 		<div class="col-sm-4">
 			<h4>Social Media</h4>
-			<a style="font-size: 11px;" href="https://www.instagram.com/zolcannabis/">@zolcannabis</a>
+			<a style="font-size: 11px;" href="https://www.instagram.com/zolcannabis/" alt="ZOL Cannabis - Premium Cannabis Distributor - Marijuana Distributor - High Times - Serious Cannabis Cultivation">@zolcannabis</a>
 		</div>
 		<div class="col-sm-4">
 			<h4>Contact</h4>
-			<a style="font-size: 11px;" href="mailto:info@zolcannabis.com">info@zolcannabis.com</a>
+			<a style="font-size: 11px;" href="mailto:info@zolcannabis.com" alt="ZOL Cannabis - Premium Cannabis Distributor - Marijuana Distributor - High Times - Serious Cannabis Cultivation">info@zolcannabis.com</a>
 
 		</div>
 		<div class="col-sm-4 site-map">
@@ -35,7 +35,7 @@
 		</div>
 
 		<div class="col-sm-12">
-			<img style="display:block; margin: 60px auto 0px; opacity: .1;" width="120" src="<?php echo get_template_directory_uri(); ?>/img/logofullwhite.png">
+			<img style="display:block; margin: 60px auto 0px; opacity: .1;" width="120" src="<?php echo get_template_directory_uri(); ?>/img/logofullwhite.png" alt="ZOL Cannabis - Premium Cannabis Distributor - Marijuana Distributor - High Times - Serious Cannabis Cultivation">
 		</div>
 		
 

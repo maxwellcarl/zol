@@ -253,7 +253,11 @@
 .home-parallax-callout {
 	color: white;	
 	text-align: center;
-	h1 { font-family: 'brush'; font-size: 48px; line-height: 1.4em; }
+	h1 { font-family: 'brush'; font-size: 48px; line-height: 1.4em; 
+		@include breakpoint(xm) { 
+			font-size: 32px;
+		}
+	}
 }
 
 

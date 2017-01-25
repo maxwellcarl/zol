@@ -8,7 +8,7 @@
 		#zol
 	</div>
 
-	<h6 style="margin-top: 10px auto;"><img src="<?php echo get_template_directory_uri(); ?>/img/ints.png" width="25">&nbsp;&nbsp;<a href="https://www.instagram.com/zolcannabis/" target='_blank'>ZOLCANNABIS</a></h6>
+	<h6 style="margin-top: 10px auto;"><img src="<?php echo get_template_directory_uri(); ?>/img/ints.png" width="25">&nbsp;&nbsp;<a href="https://www.instagram.com/zolcannabis/" target='_blank' alt="ZOL Cannabis - Premium Cannabis Distributor - Marijuana Distributor - High Times - Serious Cannabis Cultivation - Cannabis Instagram">ZOLCANNABIS</a></h6>
 
   <div id="instafeed"></div>
 </section>
@@ -30,13 +30,25 @@
 			</div>
 		</div>
 		<?php endif; ?>
-		<?php if( get_field('newsletter_signup_embed') ): ?>
+		<!-- 
+		<?php // if( get_field('newsletter_signup_embed') ): ?>
 			<div class="newsletter-txt  col-md-6 no-padding " style="position: relative;">
 				<div class="vertical">
-					<?php the_field('newsletter_signup_embed' , false, false); ?>
+					<?php // the_field('newsletter_signup_embed' , false, false); ?>
 				</div>
 			</div>
-		<?php endif; ?>
+		<?php // endif; ?>
+		-->
+
+		<div class="newsletter-txt  col-md-6 no-padding " style="position: relative;">
+			<div class="vertical">
+				<h2>FREE YOUR MIND TO FIND YOUR SOUL...</h2>						
+				<div class="hookup-contact-form ">
+					<?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?>
+				</div>
+				<p style="font-size: 9px;">Get in touch with us and we'll keep you in the loop!</p>
+			</div>
+		</div>
 
 	<?php endwhile; ?>
 	<?php wp_reset_query(); ?>
@@ -58,7 +70,7 @@
 		  <div class="front"></div>
 		  <div class="back"></div>
 	</div>
-	<p style="position:relative; text-align:center; opacity:.8;">Webdesign by <a href="http://ditigalsauna.com">digitalsauna.com</a> | <a href="http://maxwellcarlscott.com">maxwellcarlscott.com</a></p>
+	<p style="position:relative; text-align:center; opacity:.8;">Webdesign by <a title="webdesign webdevelopment nyc maxwellcarlscott digitalsauna" href="http://ditigalsauna.com">digitalsauna.com</a> | <a href="http://maxwellcarlscott.com">maxwellcarlscott.com</a></p>
 </footer>
 
 
@@ -75,25 +87,23 @@
 
 
 
-<!-- hide for sec
+<? if ( is_page_template( 'template-homepage.php' ) ): ?><!-- homepage -->
 
 <div class="age-modal">
 	<div class="age-modal-content">
-		<img width="200" src="<?php echo get_template_directory_uri(); ?>/img/logo2white.png" style="margin-bottom: 30px;">
-		<p style="margin-bottom: 15px;">Welcome to ZOL Premium Cannabis</p>
-		<h2>Are you over the age of 21?</h2>
+		<img width="140" src="<?php echo get_template_directory_uri(); ?>/img/logofullwhite.png" style="margin-bottom: 30px;"  alt="ZOL Cannabis - Premium Cannabis Distributor - Marijuana Distributor - High Times - Serious Cannabis Cultivation">
+		<p style="margin-bottom: 15px;" title="premium cannabis">Welcome to ZOL Premium Cannabis</p>
+		<h2 title="ZOL Cannabis - Premium Cannabis Distributor - Marijuana Distributor - High Times - Serious Cannabis Cultivation - Age Verification">Are you over the age of 21?</h2>
 		<div class="age-btns" style="margin: 30px 0 10px;">
-			<a id="Age-Confirm" href="#" class="btn age-btn" style="margin-right: 15px;">Yes, Let me in</a>
+			<a id="Age-Confirm" href="#" class="btn age-btn age-btn-2">Yes, Let me in</a>
 			<a href="#" class="btn age-btn">No</a>
 		</div>
-		<p>* Possible disclaimer</p>
+		<p>* Cautionary Disclaimer</p>
 	</div>
 </div>
 <div class="age-modal-overlay"></div>
 
--->
-
-
+<? endif; ?>
 
 
 
